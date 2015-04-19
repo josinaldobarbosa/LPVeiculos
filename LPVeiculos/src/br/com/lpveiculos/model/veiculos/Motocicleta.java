@@ -8,51 +8,49 @@ package br.com.lpveiculos.model.veiculos;
  *
  */
 
-public class Motocicleta {
-	
+public class Motocicleta extends Veiculo {
+
 	/* Variáveis de instância */
 	private int cilindrada;
 	private float capacidadeDoTanque;
-	
+
 	/* Construtores */
 	/**
 	 * Construtor que cadastra um veículo.
 	 * 
 	 * @param chass
-	 * 			Chassi da moto
+	 *            Chassi da moto
 	 * 
 	 * @param montadora
-	 * 			Montadora da moto
+	 *            Montadora da moto
 	 * 
 	 * @param modelo
-	 * 			Modelo da moto
+	 *            Modelo da moto
 	 * 
 	 * @param tipo
-	 * 			Tipo da moto
+	 *            Tipo da moto
 	 * 
 	 * @param cor
-	 * 			Cor da moto
+	 *            Cor da moto
 	 * 
 	 * @param preco
-	 * 			Preço da moto
+	 *            Preço da moto
 	 * 
 	 * @param cilindrada
-	 * 			Cilindrada da moto
+	 *            Cilindrada da moto
 	 * 
 	 * @param capacidadeDoTanque
-	 * 			Capacidade do tanque da moto
-	 * @return 
+	 *            Capacidade do tanque da moto
+	 * 
 	 * 
 	 * 
 	 */
-	
-	public void Carro(String chassi, String montadora, String modelo, String tipo, String cor, String preco,
-						int cilindrada, float capacidadeDoTanque) {
-		
-		this.cilindrada = cilindrada;
-		this.capacidadeDoTanque = capacidadeDoTanque;
+
+	protected Motocicleta(String chassi, String montadora, String modelo,
+			String tipo, String cor, float preco) {
+		super(chassi, montadora, modelo, tipo, cor, preco);
 	}
-	
+
 	/* Get's e Set's */
 
 	public int getCilindrada() {
@@ -70,8 +68,5 @@ public class Motocicleta {
 	public void setCapacidadeDoTanque(float capacidadeDoTanque) {
 		this.capacidadeDoTanque = capacidadeDoTanque;
 	}
-	
-	
-	
-	
+
 }
