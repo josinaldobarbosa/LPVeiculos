@@ -1,4 +1,4 @@
-LPVeiculos
+LP - Veiculos
 ===
 
 Loja de veículos
