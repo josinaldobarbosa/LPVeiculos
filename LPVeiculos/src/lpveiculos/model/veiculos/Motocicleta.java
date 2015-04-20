@@ -1,4 +1,4 @@
-package br.com.lpveiculos.model.veiculos;
+package lpveiculos.model.veiculos;
 
 /**
  * Classe que representa uma motocicleta da loja.

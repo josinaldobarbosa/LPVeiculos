@@ -1,4 +1,4 @@
-package br.com.lpveiculos.model.veiculos;
+package lpveiculos.model.veiculos;
 
 public class Veiculo {
 

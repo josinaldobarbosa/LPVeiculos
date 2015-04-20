@@ -1,7 +1,8 @@
-package br.com.lpveiculos.model;
+package lpveiculos.model;
 
 import java.util.ArrayList;
-import br.com.lpveiculos.model.veiculos.*;
+
+import lpveiculos.model.veiculos.*;
 
 /**
  * Classe que representa uma Loja de automóveis que contém todas as informações
