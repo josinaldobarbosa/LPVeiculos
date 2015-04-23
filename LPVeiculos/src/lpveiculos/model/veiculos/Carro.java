@@ -7,42 +7,41 @@ package lpveiculos.model.veiculos;
  * @version 23-04-2015
  */
 
-public class Carro extends Veiculo{
-	
-	/*Variáveis de instância*/
+public class Carro extends Veiculo {
+
+	/* Variáveis de instância */
 	private float motorizacao;
 	private String cambio;
-	
-	
-	/*Construtor*/
+
+	/* Construtor */
 	/**
 	 * Construtor para o cadastro de carros
 	 * 
 	 * @param chassi
-	 * 	Número do chassi do carro
+	 *            Número do chassi do carro
 	 * 
 	 * @param montadora
-	 * 	Nome da montadora do carro
+	 *            Nome da montadora do carro
 	 * 
 	 * @param modelo
-	 * 	Nome do modelo do carro
+	 *            Nome do modelo do carro
 	 * 
 	 * @param tipo
-	 * 	Nome da categoria do carro
+	 *            Nome da categoria do carro
 	 * 
 	 * @param cor
-	 * 	Nome da cor do carro
+	 *            Nome da cor do carro
 	 * 
 	 * @param preco
-	 * 	Valor do carro em reais (R$)
+	 *            Valor do carro em reais (R$)
 	 */
-	
+
 	protected Carro(String chassi, String montadora, String modelo,
 			String tipo, String cor, float preco) {
 		super(chassi, montadora, modelo, tipo, cor, preco);
 	}
 
-	/*Getters e Setters*/
+	/* Getters e Setters */
 	/**
 	 * @return a motorizacao
 	 */
@@ -52,7 +51,7 @@ public class Carro extends Veiculo{
 
 	/**
 	 * @param motorizacao
-	 * 	a motorizacao a ser configurada
+	 *            a motorizacao a ser configurada
 	 */
 	public void setMotorizacao(float motorizacao) {
 		this.motorizacao = motorizacao;
@@ -67,7 +66,7 @@ public class Carro extends Veiculo{
 
 	/**
 	 * @param cambio
-	 * 	a cambio a ser configurado
+	 *            a cambio a ser configurado
 	 */
 	public void setCambio(String cambio) {
 		this.cambio = cambio;
