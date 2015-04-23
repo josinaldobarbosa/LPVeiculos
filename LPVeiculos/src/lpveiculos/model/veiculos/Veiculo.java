@@ -1,13 +1,14 @@
 package lpveiculos.model.veiculos;
 
 /**
- * Super classe que contém caracteristicas em comum em todos os veiculos.
+ * Super classe abstrata que contém caracteristicas em comum em todos os
+ * veiculos.
  *
  * @author Josinaldo A.Barbosa
- * @version 21-04-2015
+ * @version 23-04-2015
  * 
  */
-public class Veiculo {
+public abstract class Veiculo {
 
 	/* Variáveis de instancia */
 	private String chassi;
