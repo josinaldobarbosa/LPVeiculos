@@ -6,7 +6,7 @@ package model.veiculos.caracteristicas.carro;
  * @version 23-04-2015
  *
  */
-public enum CategoriasCarros {
+public enum Categorias {
 	ENTRADA("Entrada"), HATCHPEQUENO("Hatch Pequeno"), HATCHMEDIO ("Hatch Médio"),
 	SEDANPEQUENO("Sedan Pequeno"), SEDANCOMPACTO ("Sedan Compacto"), SEDANMEDIO("Sedan Médio"),
 	SEDANGRANDE ("Sedan Grande"), SWMEDIO("SW Médio"), SWGRANDE ("SW Grande"),
@@ -20,7 +20,7 @@ public enum CategoriasCarros {
 	/**
 	 * @param categoria
 	 */
-	CategoriasCarros(String categoria) {
+	Categorias(String categoria) {
 		this.categoria = categoria;
 	}
 
