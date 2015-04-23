@@ -13,20 +13,26 @@ public class Carro extends Veiculo{
 	private float motorizacao;
 	private String cambio;
 	
+	
 	/*Construtor*/
 	/**
 	 * Construtor para o cadastro de carros
 	 * 
 	 * @param chassi
 	 * 	Número do chassi do carro
+	 * 
 	 * @param montadora
 	 * 	Nome da montadora do carro
+	 * 
 	 * @param modelo
 	 * 	Nome do modelo do carro
+	 * 
 	 * @param tipo
 	 * 	Nome da categoria do carro
+	 * 
 	 * @param cor
 	 * 	Nome da cor do carro
+	 * 
 	 * @param preco
 	 * 	Valor do carro em reais (R$)
 	 */
@@ -36,6 +42,7 @@ public class Carro extends Veiculo{
 		super(chassi, montadora, modelo, tipo, cor, preco);
 	}
 
+	/*Getters e Setters*/
 	/**
 	 * @return a motorizacao
 	 */
@@ -65,11 +72,5 @@ public class Carro extends Veiculo{
 	public void setCambio(String cambio) {
 		this.cambio = cambio;
 	}
-	
-	
-	
-	
-	
-	
 
 }
