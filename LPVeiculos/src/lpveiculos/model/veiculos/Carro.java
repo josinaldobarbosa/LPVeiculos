@@ -18,17 +18,17 @@ public class Carro extends Veiculo{
 	 * Construtor para o cadastro de carros
 	 * 
 	 * @param chassi
-	 * 				Número do chassi do carro
+	 * 	Número do chassi do carro
 	 * @param montadora
-	 * 				Nome da montadora do carro
+	 * 	Nome da montadora do carro
 	 * @param modelo
-	 * 				Nome do modelo do carro
+	 * 	Nome do modelo do carro
 	 * @param tipo
-	 * 				Nome da categoria do carro
+	 * 	Nome da categoria do carro
 	 * @param cor
-	 * 				Nome da cor do carro
+	 * 	Nome da cor do carro
 	 * @param preco
-	 * 				Valor do carro em reais (R$)
+	 * 	Valor do carro em reais (R$)
 	 */
 	
 	protected Carro(String chassi, String montadora, String modelo,
@@ -44,21 +44,23 @@ public class Carro extends Veiculo{
 	}
 
 	/**
-	 * @param motorizacao the motorizacao to set
+	 * @param motorizacao
+	 * 	a motorizacao a ser configurada
 	 */
 	public void setMotorizacao(float motorizacao) {
 		this.motorizacao = motorizacao;
 	}
 
 	/**
-	 * @return the cambio
+	 * @return o cambio
 	 */
 	public String getCambio() {
 		return cambio;
 	}
 
 	/**
-	 * @param cambio the cambio to set
+	 * @param cambio
+	 * 	a cambio a ser configurado
 	 */
 	public void setCambio(String cambio) {
 		this.cambio = cambio;
