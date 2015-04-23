@@ -10,10 +10,10 @@ public class Veiculo {
 
 	/* Variáveis de instancia */
 	private String chassi;
-	private String montadora;
-	private String modelo;
-	private String tipo;
-	private String cor;
+	private Montadora montadora;
+	private Modelo modelo;
+	private Tipo tipo;
+	private Cor cor;
 	private float preco;
 
 	/* Construtores */
