@@ -33,4 +33,5 @@ public enum Categorias {
 	public String getCategoria() {
 		return categoria;
 	}
+
 }

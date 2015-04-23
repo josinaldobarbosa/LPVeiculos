@@ -10,6 +10,7 @@ import lpveiculos.model.veiculos.*;
  *
  * @author Josinaldo A.Barbosa
  * @version 19-04-2015
+ * 
  */
 public class Loja {
 

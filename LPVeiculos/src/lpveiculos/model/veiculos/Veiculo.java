@@ -5,6 +5,7 @@ package lpveiculos.model.veiculos;
  *
  * @author Josinaldo A.Barbosa
  * @version 21-04-2015
+ * 
  */
 public class Veiculo {
 

@@ -7,7 +7,6 @@ package lpveiculos.model.veiculos;
  * @version 19-04-2015
  *
  */
-
 public class Motocicleta extends Veiculo {
 
 	/* Variáveis de instância */
