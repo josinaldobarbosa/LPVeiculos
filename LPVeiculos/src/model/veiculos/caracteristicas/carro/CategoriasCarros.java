@@ -30,7 +30,4 @@ public enum CategoriasCarros {
 	public String getCategoria() {
 		return categoria;
 	}
-	
-	
-	
 }
