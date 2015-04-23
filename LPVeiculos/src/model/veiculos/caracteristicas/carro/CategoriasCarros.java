@@ -20,8 +20,17 @@ public enum CategoriasCarros {
 	/**
 	 * @param categoria
 	 */
-	private CategoriasCarros(String categoria) {
+	CategoriasCarros(String categoria) {
 		this.categoria = categoria;
 	}
+
+	/**
+	 * @return a categoria
+	 */
+	public String getCategoria() {
+		return categoria;
+	}
+	
+	
 	
 }
