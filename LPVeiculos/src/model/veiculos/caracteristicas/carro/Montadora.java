@@ -9,7 +9,7 @@ package model.veiculos.caracteristicas.carro;
  *
  */
 public enum Montadora {
-	
-	
+
+	VOLKSWAGEN, FIAT, CHEVROLET, FORD, RENAULT, GM, PEUGEUOT, HONDA, NISSAN, HYUNDAI, TOYOTA, MERCEDESBENZ, BMW, AUDI, VOLVO, CITROEN, JAC, KIA, CHRYSLER, MITSUBISH
 
 }
