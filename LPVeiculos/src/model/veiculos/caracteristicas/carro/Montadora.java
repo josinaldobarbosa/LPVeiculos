@@ -17,10 +17,10 @@ public enum Montadora {
 			"Citroen"), JAC("Kac"), KIA("Kia"), CHRYSLER("Chrysler"), MITSUBISHI(
 			"Mitsubishi"), CHERY("Chery"), LANDROVER("Land Rover"), SUZUKI(
 			"Suzuki");
-	
+
 	private String montadora;
 
-	/*Construtor*/
+	/* Construtor */
 	/**
 	 * @param montadora
 	 */
@@ -28,9 +28,9 @@ public enum Montadora {
 		this.montadora = montadora;
 	}
 
-	/*Getter*/
+	/* Getter */
 	/**
-	 * @return  montadora
+	 * @return montadora
 	 */
 	public String getMontadora() {
 		return montadora;
