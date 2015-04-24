@@ -23,7 +23,7 @@ public enum Categorias {
 	/**
 	 * @param categoria
 	 */
-	Categorias(String categoria) {
+	private Categorias(String categoria) {
 		this.categoria = categoria;
 	}
 
