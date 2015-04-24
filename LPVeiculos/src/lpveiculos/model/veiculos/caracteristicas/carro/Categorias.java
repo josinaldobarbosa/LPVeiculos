@@ -1,4 +1,4 @@
-package model.veiculos.caracteristicas.carro;
+package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
  * Nesta enumeração está contida todas as categorias dos carros disponibilizados
@@ -9,6 +9,7 @@ package model.veiculos.caracteristicas.carro;
  *
  */
 public enum Categorias {
+	
 	ENTRADA("Entrada"), HATCHPEQUENO("Hatch Pequeno"), HATCHMEDIO("Hatch Médio"), SEDANPEQUENO(
 			"Sedan Pequeno"), SEDANCOMPACTO("Sedan Compacto"), SEDANMEDIO(
 			"Sedan Médio"), SEDANGRANDE("Sedan Grande"), SWMEDIO("SW Médio"), SWGRANDE(
