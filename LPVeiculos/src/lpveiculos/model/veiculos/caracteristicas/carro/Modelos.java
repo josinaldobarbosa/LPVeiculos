@@ -1,4 +1,4 @@
-package model.veiculos.caracteristicas.carro;
+package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
  * Nesta enumeração estará contida o nome de todos os modelos comercializados pela loja.

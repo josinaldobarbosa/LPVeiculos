@@ -1,4 +1,4 @@
-package model.veiculos.caracteristicas.carro;
+package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
  * Nesta enumeração está contida todas o nome de todas as montadoras de carros

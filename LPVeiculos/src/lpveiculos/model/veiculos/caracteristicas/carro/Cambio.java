@@ -1,4 +1,4 @@
-package model.veiculos.caracteristicas.carro;
+package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
  * Nesta enumeração os tipos de câmbio disponíveis nos carros.
@@ -8,7 +8,7 @@ package model.veiculos.caracteristicas.carro;
  */
 public enum Cambio {
 
-	AUTOMATICO("Automático"), SEMIAUTOMATICO("Semiautomático"), MANUAL("Manual");
+	AUTOMATICO("Automático"), SEMIAUTOMATICO("Semi-automático"), MANUAL("Manual");
 
 	private String cambio;
 
