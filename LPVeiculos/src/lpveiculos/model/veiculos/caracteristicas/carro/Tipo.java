@@ -8,8 +8,8 @@ package lpveiculos.model.veiculos.caracteristicas.carro;
  * @version 23-04-2015
  *
  */
-public enum Categorias {
-	
+public enum Tipo {
+
 	ENTRADA("Entrada"), HATCHPEQUENO("Hatch Pequeno"), HATCHMEDIO("Hatch Médio"), SEDANPEQUENO(
 			"Sedan Pequeno"), SEDANCOMPACTO("Sedan Compacto"), SEDANMEDIO(
 			"Sedan Médio"), SEDANGRANDE("Sedan Grande"), SWMEDIO("SW Médio"), SWGRANDE(
@@ -24,7 +24,7 @@ public enum Categorias {
 	/**
 	 * @param categoria
 	 */
-	private Categorias(String categoria) {
+	private Tipo(String categoria) {
 		this.categoria = categoria;
 	}
 

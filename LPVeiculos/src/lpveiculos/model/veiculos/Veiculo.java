@@ -1,5 +1,7 @@
 package lpveiculos.model.veiculos;
 
+import lpveiculos.model.veiculos.caracteristicas.Cor;
+
 /**
  * Super classe abstrata que contém caracteristicas em comum em todos os
  * veiculos.
@@ -12,9 +14,6 @@ public abstract class Veiculo {
 
 	/* Variáveis de instancia */
 	private String chassi;
-	private Montadora montadora;
-	private Modelo modelo;
-	private Tipo tipo;
 	private Cor cor;
 	private float preco;
 
@@ -25,23 +24,13 @@ public abstract class Veiculo {
 	 * 
 	 * @param chassi
 	 *            Chassi do veiculo
-	 * @param montadora
-	 *            Montadora do veiculo
-	 * @param modelo
-	 *            Modelo do veiculo
-	 * @param tipo
-	 *            Tipo do veiculo
 	 * @param cor
 	 *            Cor do veiculo
 	 * @param preco
 	 *            Preço do veiculo
 	 */
-	protected Veiculo(String chassi, String montadora, String modelo,
-			String tipo, String cor, float preco) {
+	public Veiculo(String chassi, Cor cor, float preco) {
 		this.chassi = chassi;
-		this.montadora = montadora;
-		this.modelo = modelo;
-		this.tipo = tipo;
 		this.cor = cor;
 		this.preco = preco;
 	}
@@ -67,79 +56,12 @@ public abstract class Veiculo {
 	}
 
 	/**
-	 * Retorna a montadora do veiculo.
-	 * 
-	 * @return montadora do veiculo
-	 */
-	public String getMontadora() {
-		return montadora;
-	}
-
-	/**
-	 * Substitui a montadora do veiculo.
-	 * 
-	 * @param montadora
-	 *            a nova montadora
-	 */
-	public void setMontadora(String montadora) {
-		this.montadora = montadora;
-	}
-
-	/**
-	 * Retorna o modelo do veiculo.
-	 * 
-	 * @return modelo do veiculo
-	 */
-	public String getModelo() {
-		return modelo;
-	}
-
-	/**
-	 * Substitui o modelo do veiculo.
-	 * 
-	 * @param modelo
-	 *            o novo modelo
-	 */
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
-	/**
-	 * Retorna o tipo do veiculo.
-	 * 
-	 * @return tipo do veiculo
-	 */
-	public String getTipo() {
-		return tipo;
-	}
-
-	/**
-	 * Substitui o tipo do veiculo.
-	 * 
-	 * @param tipo
-	 *            o novo tipo
-	 */
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	/**
 	 * Retorna a cor do veiculo.
 	 * 
 	 * @return cor do veiculo
 	 */
 	public String getCor() {
-		return cor;
-	}
-
-	/**
-	 * Substitui a cor do veiculo.
-	 * 
-	 * @param cor
-	 *            a nova cor
-	 */
-	public void setCor(String cor) {
-		this.cor = cor;
+		return cor.getCor();
 	}
 
 	/**
