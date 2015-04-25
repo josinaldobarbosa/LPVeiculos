@@ -50,7 +50,6 @@ public class Motocicleta extends Veiculo {
 		super(chassi, montadora, modelo, tipo, cor, preco);
 		this.cilindrada = cilindrada;
 		this.capacidadeDoTanque = capacidadeDoTanque;
-
 	}
 
 	/* Get's e Set's */
