@@ -34,36 +34,60 @@ public class Motocicleta extends Veiculo {
 	 * 
 	 * @param preco
 	 *            Preço da moto
+	 * @param cilindrada
 	 * 
 	 * @param cilindrada
 	 *            Cilindrada da moto
+	 * @param capacidadeDoTanque
 	 * 
 	 * @param capacidadeDoTanque
 	 *            Capacidade do tanque da moto
-	 * 
-	 * 
-	 * 
 	 */
 
 	protected Motocicleta(String chassi, String montadora, String modelo,
-			String tipo, String cor, float preco) {
+			String tipo, String cor, float preco, int cilindrada,
+			float capacidadeDoTanque) {
 		super(chassi, montadora, modelo, tipo, cor, preco);
+		this.cilindrada = cilindrada;
+		this.capacidadeDoTanque = capacidadeDoTanque;
+
 	}
 
 	/* Get's e Set's */
-
+	/**
+	 * Retorna a cilindrada da moto.
+	 * 
+	 * @return cilindrada da moto
+	 */
 	public int getCilindrada() {
 		return cilindrada;
 	}
 
+	/**
+	 * Substitui a cilindrada da moto.
+	 * 
+	 * @param cilindrada
+	 *            a nova cilindrada
+	 */
 	public void setCilindrada(int cilindrada) {
 		this.cilindrada = cilindrada;
 	}
 
+	/**
+	 * Retorna a capacidade do tanque
+	 * 
+	 * @return capacidade do tanque
+	 */
 	public float getCapacidadeDoTanque() {
 		return capacidadeDoTanque;
 	}
 
+	/**
+	 * Substitui a capacidade do tanque
+	 * 
+	 * @param capacidadeDoTanque.
+	 *             a nova capacidade
+	 */
 	public void setCapacidadeDoTanque(float capacidadeDoTanque) {
 		this.capacidadeDoTanque = capacidadeDoTanque;
 	}
