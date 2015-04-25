@@ -1,6 +1,7 @@
 package lpveiculos.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import lpveiculos.model.veiculos.*;
 
@@ -42,7 +43,10 @@ public class Loja {
 	 *            O Carro a ser adicionado
 	 */
 	public void adicionaVeiculo(Carro carro) {
-		estoqueDeCarros.add(carro);
+		// Verifica se não contém o mesmo carro no estoque
+		if (Collections.frequency(estoqueDeCarros, carro) == 0) {
+			estoqueDeCarros.add(carro);
+		}
 	}
 
 	/**
@@ -52,7 +56,10 @@ public class Loja {
 	 *            A Motocicleta a ser adicionado
 	 */
 	public void adicionaVeiculo(Motocicleta motocicleta) {
-		estoqueDeMotocicletas.add(motocicleta);
+		// Verifica se não contém a mesma motocicleta no estoque
+		if (Collections.frequency(estoqueDeMotocicletas, motocicleta) == 0) {
+			estoqueDeMotocicletas.add(motocicleta);
+		}
 	}
 
 	/* Get's e Set's */
