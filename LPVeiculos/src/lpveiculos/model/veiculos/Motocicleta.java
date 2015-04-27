@@ -45,7 +45,7 @@ public class Motocicleta extends Veiculo {
 	 * @param capacidadeDoTanque
 	 *            Capacidade do tanque da moto
 	 */
-	protected Motocicleta(String chassi, String modelo, String montadora,
+	public Motocicleta(String chassi, String modelo, String montadora,
 			String tipo, Cor cor, float preco, int cilindrada,
 			float capacidadeDoTanque) {
 		super(chassi, modelo, cor, preco);
