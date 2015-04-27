@@ -7,10 +7,10 @@ import lpveiculos.model.Loja;
 import lpveiculos.model.veiculos.Carro;
 import lpveiculos.model.veiculos.Motocicleta;
 
-public class ExibeVeiculos {
+public class ExibeVeiculo {
 
 	// Bloqueia criação de objetos
-	private ExibeVeiculos() {
+	private ExibeVeiculo() {
 	}
 
 	// Exibe veiculos
