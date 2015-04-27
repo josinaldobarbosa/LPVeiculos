@@ -4,13 +4,13 @@ package lpveiculos.model.veiculos.caracteristicas.motocicleta;
  * Nesta enumeração está contida os tipos de câmbio disponível na moto.
  * 
  * @author Wallace Jonatthan
- *@version 25-04-2015
+ * @version 25-04-2015
+ *
  */
-
 public enum Cambio {
 
 	AUTOMATICO("Automático"), MANUAL("Manual");
-	
+
 	private String cambio;
 
 	/* Construtor */
@@ -22,14 +22,15 @@ public enum Cambio {
 	private Cambio(String cambio) {
 		this.cambio = cambio;
 	}
-	
+
 	/* Getter */
 	/**
-	 * Substitui o cambio da motocicleta.
+	 * Retorna o cambio da motocicleta.
 	 *
-	 * @return cambio 
+	 * @return cambio
 	 */
 	public String getCambio() {
 		return cambio;
 	}
+
 }

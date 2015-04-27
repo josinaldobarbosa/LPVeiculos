@@ -5,7 +5,7 @@ package lpveiculos.model.veiculos.caracteristicas.carro;
  * pela loja.
  * 
  * @author Carlos Renato
- * @version 23-04-2015
+ * @version 26-04-2015
  *
  */
 public enum Tipo {
@@ -18,21 +18,21 @@ public enum Tipo {
 			"Pick-up"), FURGAO("Furgão"), FURGAOPEQUENO("Furgão Pequeno"), SUV(
 			"SUV");
 
-	private String categoria;
+	private String tipo;
 
 	/* Construtor */
 	/**
-	 * @param categoria
+	 * @param tipo
 	 */
-	private Tipo(String categoria) {
-		this.categoria = categoria;
+	private Tipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	/**
-	 * @return a categoria
+	 * @return a tipo
 	 */
-	public String getCategoria() {
-		return categoria;
+	public String getTipo() {
+		return tipo;
 	}
 
 }

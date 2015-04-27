@@ -7,13 +7,14 @@ import lpveiculos.model.veiculos.caracteristicas.Cor;
  * veiculos.
  *
  * @author Josinaldo A.Barbosa
- * @version 23-04-2015
+ * @version 26-04-2015
  * 
  */
 public abstract class Veiculo {
 
 	/* Variáveis de instancia */
 	private String chassi;
+	private String modelo;
 	private Cor cor;
 	private float preco;
 
@@ -29,8 +30,9 @@ public abstract class Veiculo {
 	 * @param preco
 	 *            Preço do veiculo
 	 */
-	public Veiculo(String chassi, Cor cor, float preco) {
+	public Veiculo(String chassi, String modelo, Cor cor, float preco) {
 		this.chassi = chassi;
+		this.modelo = modelo;
 		this.cor = cor;
 		this.preco = preco;
 	}
@@ -80,6 +82,25 @@ public abstract class Veiculo {
 	 */
 	public void setChassi(String chassi) {
 		this.chassi = chassi;
+	}
+
+	/**
+	 * Retorna o modelo do veiculo.
+	 * 
+	 * @return modelo do veiculo
+	 */
+	public String getModelo() {
+		return modelo;
+	}
+
+	/**
+	 * Substitui o modelo do veiculo.
+	 * 
+	 * @param modelo
+	 *            o novo modelo
+	 */
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 
 	/**

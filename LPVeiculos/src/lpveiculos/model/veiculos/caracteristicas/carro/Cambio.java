@@ -8,7 +8,8 @@ package lpveiculos.model.veiculos.caracteristicas.carro;
  */
 public enum Cambio {
 
-	AUTOMATICO("Automático"), SEMIAUTOMATICO("Semi-automático"), MANUAL("Manual");
+	AUTOMATICO("Automático"), SEMIAUTOMATICO("Semi-automático"), MANUAL(
+			"Manual");
 
 	private String cambio;
 
@@ -27,4 +28,5 @@ public enum Cambio {
 	public String getCambio() {
 		return cambio;
 	}
+
 }

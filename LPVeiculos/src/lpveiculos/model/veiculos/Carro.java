@@ -1,7 +1,6 @@
 package lpveiculos.model.veiculos;
 
 import lpveiculos.model.veiculos.caracteristicas.Cor;
-import lpveiculos.model.veiculos.caracteristicas.carro.Modelos;
 import lpveiculos.model.veiculos.caracteristicas.carro.Montadora;
 import lpveiculos.model.veiculos.caracteristicas.carro.Tipo;
 
@@ -16,7 +15,6 @@ public class Carro extends Veiculo {
 
 	/* Variáveis de instância */
 	private Montadora montadora;
-	private Modelos modelo;
 	private Tipo tipo;
 	private float motorizacao;
 	private String cambio;
@@ -42,11 +40,10 @@ public class Carro extends Veiculo {
 	 * @param cambio
 	 *            Tipo de câmbio do carro
 	 */
-	public Carro(String chassi, Cor cor, float preco, Montadora montadora,
-			Modelos modelo, Tipo tipo, float motorizacao, String cambio) {
-		super(chassi, cor, preco);
+	public Carro(String chassi, String modelo, Cor cor, float preco,
+			Montadora montadora, Tipo tipo, float motorizacao, String cambio) {
+		super(chassi, modelo, cor, preco);
 		this.montadora = montadora;
-		this.modelo = modelo;
 		this.tipo = tipo;
 		this.motorizacao = motorizacao;
 		this.cambio = cambio;
@@ -70,25 +67,6 @@ public class Carro extends Veiculo {
 	 */
 	public void setMontadora(Montadora montadora) {
 		this.montadora = montadora;
-	}
-
-	/**
-	 * Retorna o modelo do carro
-	 * 
-	 * @return modelo do carro
-	 */
-	public Modelos getModelo() {
-		return modelo;
-	}
-
-	/**
-	 * Substitui o modelo do carro
-	 * 
-	 * @param modelo
-	 *            o novo modelo
-	 */
-	public void setModelo(Modelos modelo) {
-		this.modelo = modelo;
 	}
 
 	/**

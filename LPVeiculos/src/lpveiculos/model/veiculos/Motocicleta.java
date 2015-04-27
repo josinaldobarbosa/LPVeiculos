@@ -1,5 +1,7 @@
 package lpveiculos.model.veiculos;
 
+import lpveiculos.model.veiculos.caracteristicas.Cor;
+
 /**
  * Classe que representa uma motocicleta da loja.
  * 
@@ -43,11 +45,10 @@ public class Motocicleta extends Veiculo {
 	 * @param capacidadeDoTanque
 	 *            Capacidade do tanque da moto
 	 */
-
-	protected Motocicleta(String chassi, String montadora, String modelo,
-			String tipo, String cor, float preco, int cilindrada,
+	protected Motocicleta(String chassi, String modelo, String montadora,
+			String tipo, Cor cor, float preco, int cilindrada,
 			float capacidadeDoTanque) {
-		super(chassi, montadora, modelo, tipo, cor, preco);
+		super(chassi, modelo, cor, preco);
 		this.cilindrada = cilindrada;
 		this.capacidadeDoTanque = capacidadeDoTanque;
 	}
@@ -84,8 +85,8 @@ public class Motocicleta extends Veiculo {
 	/**
 	 * Substitui a capacidade do tanque
 	 * 
-	 * @param capacidadeDoTanque.
-	 *             a nova capacidade
+	 * @param capacidadeDoTanque
+	 *            a nova capacidade
 	 */
 	public void setCapacidadeDoTanque(float capacidadeDoTanque) {
 		this.capacidadeDoTanque = capacidadeDoTanque;
