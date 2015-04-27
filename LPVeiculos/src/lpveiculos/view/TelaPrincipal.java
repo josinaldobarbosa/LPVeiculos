@@ -63,7 +63,7 @@ public class TelaPrincipal {
 
 				case 5:
 					/* Exibe todos os veiculos */
-					ExibeVeiculos.exibe(loja);
+					ExibeVeiculo.exibe(loja);
 					break;
 
 				case 6:
