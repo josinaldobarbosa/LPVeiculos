@@ -14,26 +14,26 @@ public enum Tipo {
 			"Cub"), SCOOTER("Scooter"), SPORT("Sport"), TOURING("Touring"), TRAIL(
 			"Trail"), FUN("Fun");
 
-	private String categoria;
+	private String tipo;
 
 	/* Construtor */
 	/**
-	 * Construtor que recebe a categoria.
+	 * Construtor que recebe o tipo.
 	 * 
-	 * @param categoria
+	 * @param tipo
 	 */
-	private Tipo(String categoria) {
-		this.categoria = categoria;
+	private Tipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	/* Getter */
 	/**
-	 * Retorna a categoria da motocicleta.
+	 * Retorna o tipo da motocicleta.
 	 * 
 	 * @return categoria
 	 */
-	public String getCategoria() {
-		return categoria;
+	public String getTipo() {
+		return tipo;
 	}
 
 }

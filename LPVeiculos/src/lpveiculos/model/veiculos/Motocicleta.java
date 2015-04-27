@@ -1,6 +1,8 @@
 package lpveiculos.model.veiculos;
 
 import lpveiculos.model.veiculos.caracteristicas.Cor;
+import lpveiculos.model.veiculos.caracteristicas.motocicleta.Montadora;
+import lpveiculos.model.veiculos.caracteristicas.motocicleta.Tipo;
 
 /**
  * Classe que representa uma motocicleta da loja.
@@ -12,6 +14,8 @@ import lpveiculos.model.veiculos.caracteristicas.Cor;
 public class Motocicleta extends Veiculo {
 
 	/* Variáveis de instância */
+	private Montadora montadora;
+	private Tipo tipo;
 	private int cilindrada;
 	private float capacidadeDoTanque;
 
@@ -45,10 +49,12 @@ public class Motocicleta extends Veiculo {
 	 * @param capacidadeDoTanque
 	 *            Capacidade do tanque da moto
 	 */
-	public Motocicleta(String chassi, String modelo, String montadora,
-			String tipo, Cor cor, float preco, int cilindrada,
+	public Motocicleta(String chassi, String modelo, Montadora montadora,
+			Tipo tipo, Cor cor, float preco, int cilindrada,
 			float capacidadeDoTanque) {
 		super(chassi, modelo, cor, preco);
+		this.montadora = montadora;
+		this.tipo = tipo;
 		this.cilindrada = cilindrada;
 		this.capacidadeDoTanque = capacidadeDoTanque;
 	}
@@ -90,6 +96,44 @@ public class Motocicleta extends Veiculo {
 	 */
 	public void setCapacidadeDoTanque(float capacidadeDoTanque) {
 		this.capacidadeDoTanque = capacidadeDoTanque;
+	}
+
+	/**
+	 * Retorna a montadora da motocicleta
+	 * 
+	 * @return a montadora
+	 */
+	public String getMontadora() {
+		return montadora.getMontadora();
+	}
+
+	/**
+	 * Substitui a montadora da motocicleta
+	 * 
+	 * @param montadora
+	 *            a nova montadora
+	 */
+	public void setMontadora(Montadora montadora) {
+		this.montadora = montadora;
+	}
+
+	/**
+	 * Retorna o tipo de motocicleta
+	 * 
+	 * @return o tipo
+	 */
+	public String getTipo() {
+		return tipo.getTipo();
+	}
+
+	/**
+	 * Substitui o tipo da motocicleta
+	 * 
+	 * @param tipo
+	 *            o novo tipo
+	 */
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
 	}
 
 }

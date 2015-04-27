@@ -1,6 +1,7 @@
 package lpveiculos.model.veiculos;
 
 import lpveiculos.model.veiculos.caracteristicas.Cor;
+import lpveiculos.model.veiculos.caracteristicas.carro.Cambio;
 import lpveiculos.model.veiculos.caracteristicas.carro.Montadora;
 import lpveiculos.model.veiculos.caracteristicas.carro.Tipo;
 
@@ -17,7 +18,7 @@ public class Carro extends Veiculo {
 	private Montadora montadora;
 	private Tipo tipo;
 	private float motorizacao;
-	private String cambio;
+	private Cambio cambio;
 
 	/* Construtor */
 	/**
@@ -41,7 +42,7 @@ public class Carro extends Veiculo {
 	 *            Tipo de câmbio do carro
 	 */
 	public Carro(String chassi, String modelo, Cor cor, float preco,
-			Montadora montadora, Tipo tipo, float motorizacao, String cambio) {
+			Montadora montadora, Tipo tipo, float motorizacao, Cambio cambio) {
 		super(chassi, modelo, cor, preco);
 		this.montadora = montadora;
 		this.tipo = tipo;
@@ -55,8 +56,8 @@ public class Carro extends Veiculo {
 	 * 
 	 * @return montadora do carro
 	 */
-	public Montadora getMontadora() {
-		return montadora;
+	public String getMontadora() {
+		return montadora.getMontadora();
 	}
 
 	/**
@@ -74,8 +75,8 @@ public class Carro extends Veiculo {
 	 * 
 	 * @return tipo do carro
 	 */
-	public Tipo getTipo() {
-		return tipo;
+	public String getTipo() {
+		return tipo.getTipo();
 	}
 
 	/**
@@ -94,7 +95,7 @@ public class Carro extends Veiculo {
 	 * @return cambio do carro
 	 */
 	public String getCambio() {
-		return cambio;
+		return cambio.getCambio();
 	}
 
 	/**
@@ -103,7 +104,7 @@ public class Carro extends Veiculo {
 	 * @param cambio
 	 *            o novo cambio
 	 */
-	public void setCambio(String cambio) {
+	public void setCambio(Cambio cambio) {
 		this.cambio = cambio;
 	}
 
