@@ -62,6 +62,26 @@ public class Loja {
 		}
 	}
 
+	/**
+	 * Remove um Carro
+	 * 
+	 * @param carro
+	 *            carro a ser removido
+	 */
+	public void removeVeiculo(Carro carro) {
+		estoqueDeCarros.remove(carro);
+	}
+
+	/**
+	 * Remove uma motocicleta
+	 * 
+	 * @param motocicleta
+	 *            motocicleta a ser removida
+	 */
+	public void removeVeiculo(Motocicleta motocicleta) {
+		estoqueDeMotocicletas.remove(motocicleta);
+	}
+
 	/* Get's e Set's */
 	/**
 	 * Retona o endereço da loja.
