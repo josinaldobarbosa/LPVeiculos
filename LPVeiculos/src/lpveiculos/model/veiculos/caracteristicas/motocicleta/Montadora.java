@@ -10,8 +10,12 @@ package lpveiculos.model.veiculos.caracteristicas.motocicleta;
  */
 public enum Montadora {
 
-	HONDA("Honda"), YAMAHA("Yamaha"), HARLEYDAVIDSON("Harley Davidson"), SHINERAY(
-			"Shineray"), BMW("Bmw"), KAWASAKI("Kawasaki");
+	HONDA          ("Honda"),
+	YAMAHA         ("Yamaha"),
+	HARLEYDAVIDSON ("Harley Davidson"),
+	SHINERAY       ("Shineray"),
+	BMW            ("Bmw"),
+	KAWASAKI       ("Kawasaki");
 
 	private String montadora;
 

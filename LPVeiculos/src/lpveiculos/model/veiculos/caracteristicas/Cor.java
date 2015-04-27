@@ -8,9 +8,17 @@ package lpveiculos.model.veiculos.caracteristicas;
  */
 public enum Cor {
 
-	BRANCA("Branca"), PRETA("Preta"), CINZA("Cinza"), PRATA("Prata"), VERMELHA(
-			"Vermelha"), MARROM("Marrom"), BEGE("Bege"), AZUL("Azul"), VERDE(
-			"Verde"), AMARELA("Amarela"), DOURADA("Dourada");
+	BRANCA   ("Branca"), 
+	PRETA    ("Preta"),
+	CINZA    ("Cinza"),
+	PRATA    ("Prata"),
+	VERMELHA ("Vermelha"),
+	MARROM   ("Marrom"),
+	BEGE     ("Bege"),
+	AZUL     ("Azul"),
+	VERDE    ("Verde"),
+	AMARELA  ("Amarela"),
+	DOURADA  ("Dourada");
 
 	private String cor;
 

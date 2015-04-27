@@ -10,9 +10,16 @@ package lpveiculos.model.veiculos.caracteristicas.motocicleta;
  */
 public enum Tipo {
 
-	CITY("City"), CUSTOM("Custom"), MAXTRAIL("Maxtrail"), NAKED("Naked"), CUB(
-			"Cub"), SCOOTER("Scooter"), SPORT("Sport"), TOURING("Touring"), TRAIL(
-			"Trail"), FUN("Fun");
+	CITY     ("City"),
+	CUSTOM   ("Custom"),
+	MAXTRAIL ("Maxtrail"),
+	NAKED    ("Naked"),
+	CUB      ("Cub"),
+	SCOOTER  ("Scooter"),
+	SPORT    ("Sport"),
+	TOURING  ("Touring"),
+	TRAIL    ("Trail"),
+	FUN      ("Fun");
 
 	private String tipo;
 
