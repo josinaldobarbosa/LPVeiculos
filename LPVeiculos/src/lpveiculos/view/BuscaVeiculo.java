@@ -27,7 +27,9 @@ public class BuscaVeiculo {
 
 			if (carro != null) {
 				// exibe
-				exibeVeiculo(carro);
+				System.out.println("\n[----------- Carro encontrado -----------]");
+				ExibeVeiculo.exibeUmVeiculo(carro);
+				System.out.println("[----------------------------------------]");
 			} else {
 				// não encontrado
 				System.out.println("\nERRO: Carro NÃO encontrado.");
@@ -46,7 +48,9 @@ public class BuscaVeiculo {
 
 			if (motocicleta != null) {
 				// exibe
-				exibeVeiculo(motocicleta);
+				System.out.println("\n[-------- Motocicleta encontrada --------]");
+				ExibeVeiculo.exibeUmVeiculo(motocicleta);
+				System.out.println("[----------------------------------------]");
 			} else {
 				// não encontrado
 				System.out.println("\nERRO: Motocicleta NÃO encontrada.");
@@ -71,8 +75,7 @@ public class BuscaVeiculo {
 	}
 
 	// Busca na loja a motocicleta
-	protected static Motocicleta buscaMotocicleta(String chassiMotocicleta,
-			Loja loja) {
+	protected static Motocicleta buscaMotocicleta(String chassiMotocicleta, Loja loja) {
 		Motocicleta retorno = null;
 		for (Motocicleta moto : loja.getEstoqueDeMotocicleta()) {
 			if (moto.getChassi().equals(chassiMotocicleta)) {
@@ -81,37 +84,6 @@ public class BuscaVeiculo {
 			}
 		}
 		return retorno;
-	}
-
-	// Exibe Carro
-	protected static void exibeVeiculo(Carro carro) {
-		System.out.println("\n[----------- Carro encontrado -----------]");
-		System.out.println(" Chassi: " + carro.getChassi());
-		System.out.println(" Montadora: " + carro.getMontadora());
-		System.out.println(" Modelo: " + carro.getModelo());
-		System.out.println(" Tipo: " + carro.getTipo());
-		System.out.println(" Cor: " + carro.getCor());
-		System.out.println(" Motorização: " + carro.getMotorizacao());
-		System.out.println(" Cambio: " + carro.getCambio());
-		System.out.println(" Preço: "
-				+ Utilidades.formatoDinheiro.format(carro.getPreco()));
-		System.out.println("[----------------------------------------]");
-	}
-
-	// Exibe Motocicleta
-	protected static void exibeVeiculo(Motocicleta motocicleta) {
-		System.out.println("\n[-------- Motocicleta encontrada --------]");
-		System.out.println(" Chassi: " + motocicleta.getChassi());
-		System.out.println(" Montadora: " + motocicleta.getMontadora());
-		System.out.println(" Modelo: " + motocicleta.getModelo());
-		System.out.println(" Tipo: " + motocicleta.getTipo());
-		System.out.println(" Cor: " + motocicleta.getCor());
-		System.out.println(" Cilindrada: " + motocicleta.getCilindrada());
-		System.out.println(" Capacidade do tanque: "
-				+ motocicleta.getCapacidadeDoTanque());
-		System.out.println(" Preço: "
-				+ Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
-		System.out.println("[----------------------------------------]");
 	}
 
 }

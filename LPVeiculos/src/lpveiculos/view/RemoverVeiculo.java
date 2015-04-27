@@ -30,7 +30,10 @@ public class RemoverVeiculo {
 			// Verifica se achou
 			if (carro != null) {
 				// exibe o carro
-				BuscaVeiculo.exibeVeiculo(carro);
+				System.out.println("\n[----------- Carro encontrado -----------]");
+				ExibeVeiculo.exibeUmVeiculo(carro);
+				System.out.println("[----------------------------------------]");
+
 				if (desejaRemover().equals("s")) {
 					loja.removeVeiculo(carro);
 					System.out.println("\nAVISO: Carro removido com sucesso.");
@@ -59,7 +62,10 @@ public class RemoverVeiculo {
 			// Verifica se achou
 			if (motocicleta != null) {
 				// exibe a motocicleta
-				BuscaVeiculo.exibeVeiculo(motocicleta);
+				System.out.println("\n[-------- Motocicleta encontrada --------]");
+				ExibeVeiculo.exibeUmVeiculo(motocicleta);
+				System.out.println("[----------------------------------------]");
+				
 				if (desejaRemover().equals("s")) {
 					loja.removeVeiculo(motocicleta);
 					System.out

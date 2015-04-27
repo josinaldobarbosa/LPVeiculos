@@ -41,7 +41,7 @@ public class Utilidades {
 				retorno = 2;
 				break;
 			case 3:
-				System.out.println(); // quebra linha
+				System.out.println();
 				retorno = -1;
 				break;
 			default:

@@ -28,6 +28,13 @@ public class AdicionaVeiculo {
 			// Salva quantidade antes de adicionar
 			int totalCarros = loja.getEstoqueDeCarros().size();
 
+			Utilidades.limpaTela();
+
+			// Exibe o carro criado
+			System.out.println("[-------------- Novo Carro --------------]");
+			ExibeVeiculo.exibeUmVeiculo(carro);
+			System.out.println("[----------------------------------------]");
+
 			// Pergunta se quer salvar
 			if (desejaSalvar().equals("s")) {
 				// Adiciona carro na loja
@@ -54,6 +61,13 @@ public class AdicionaVeiculo {
 
 			// Salva quantidade antes de adicionar
 			int totalMotocicletas = loja.getEstoqueDeMotocicleta().size();
+
+			Utilidades.limpaTela();
+
+			// Exibe a motocicleta criada
+			System.out.println("[----------- Nova Motocicleta -----------]");
+			ExibeVeiculo.exibeUmVeiculo(motocicleta);
+			System.out.println("[----------------------------------------]");
 
 			// Pergunta se quer salvar
 			if (desejaSalvar().equals("s")) {

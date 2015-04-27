@@ -28,23 +28,10 @@ public class ExibeVeiculo {
 			if (validaLista(carros)) {
 				// Exibe carro
 				for (int i = 0; i < carros.size(); i++) {
-					System.out.println("[--------------- " + (i + 1)
-							+ "º Carro ---------------]");
-					System.out.println(" Chassi: " + carros.get(i).getChassi());
-					System.out.println(" Montadora: "
-							+ carros.get(i).getMontadora());
-					System.out.println(" Modelo: " + carros.get(i).getModelo());
-					System.out.println(" Tipo: " + carros.get(i).getTipo());
-					System.out.println(" Cor: " + carros.get(i).getCor());
-					System.out.println(" Motorização: "
-							+ carros.get(i).getMotorizacao());
-					System.out.println(" Cambio: " + carros.get(i).getCambio());
-					System.out.println(" Preço: "
-							+ Utilidades.formatoDinheiro.format(carros.get(i)
-									.getPreco()));
+					System.out.println("[--------------- " + (i + 1) + "º Carro ---------------]");
+					exibeUmVeiculo(carros.get(i));
 				}
-				System.out
-						.println("[----------------------------------------]");
+				System.out.println("[----------------------------------------]");
 				System.out.println("\nTotal de carros: " + carros.size());
 			} else {
 				System.out.print("\nAVISO: Estoque de Carros vazio.\n");
@@ -62,29 +49,11 @@ public class ExibeVeiculo {
 			if (validaLista(motocicletas)) {
 				// Exibe motocicleta
 				for (int i = 0; i < motocicletas.size(); i++) {
-					System.out.println("[------------ " + (i + 1)
-							+ "º Motocicleta ------------]");
-					System.out.println(" Chassi: "
-							+ motocicletas.get(i).getChassi());
-					System.out.println(" Montadora: "
-							+ motocicletas.get(i).getMontadora());
-					System.out.println(" Modelo: "
-							+ motocicletas.get(i).getModelo());
-					System.out.println(" Tipo: "
-							+ motocicletas.get(i).getTipo());
-					System.out.println(" Cor: " + motocicletas.get(i).getCor());
-					System.out.println(" Cilindrada: "
-							+ motocicletas.get(i).getCilindrada());
-					System.out.println(" Capacidade do tanque: "
-							+ motocicletas.get(i).getCapacidadeDoTanque());
-					System.out.println(" Preço: "
-							+ Utilidades.formatoDinheiro.format(motocicletas
-									.get(i).getPreco()));
+					System.out.println("[------------ " + (i + 1) + "º Motocicleta ------------]");
+					exibeUmVeiculo(motocicletas.get(i));
 				}
-				System.out
-						.println("[----------------------------------------]");
-				System.out.println("\nTotal de motocicletas: "
-						+ motocicletas.size());
+				System.out.println("[----------------------------------------]");
+				System.out.println("\nTotal de motocicletas: " + motocicletas.size());
 			} else {
 				System.out.print("\nAVISO: Estoque de Motocicletas vazio.\n");
 			}
@@ -101,6 +70,34 @@ public class ExibeVeiculo {
 			retorno = false;
 		}
 		return retorno;
+	}
+
+	// Exibe um Carro
+	protected static void exibeUmVeiculo(Carro carro) {
+		System.out.println();
+		System.out.println(" Chassi:      " + carro.getChassi());
+		System.out.println(" Montadora:   " + carro.getMontadora());
+		System.out.println(" Modelo:      " + carro.getModelo());
+		System.out.println(" Tipo:        " + carro.getTipo());
+		System.out.println(" Cor:         " + carro.getCor());
+		System.out.println(" Motorização: " + carro.getMotorizacao());
+		System.out.println(" Cambio:      " + carro.getCambio());
+		System.out.println(" Preço:       " + Utilidades.formatoDinheiro.format(carro.getPreco()));
+		System.out.println();
+	}
+
+	// Exibe uma Motocicleta
+	protected static void exibeUmVeiculo(Motocicleta motocicleta) {
+		System.out.println();
+		System.out.println(" Chassi:         " + motocicleta.getChassi());
+		System.out.println(" Montadora:      " + motocicleta.getMontadora());
+		System.out.println(" Modelo:         " + motocicleta.getModelo());
+		System.out.println(" Tipo:           " + motocicleta.getTipo());
+		System.out.println(" Cor:            " + motocicleta.getCor());
+		System.out.println(" Cilindrada:     " + motocicleta.getCilindrada());
+		System.out.println(" Cap. do tanque: " + motocicleta.getCapacidadeDoTanque());
+		System.out.println(" Preço:          " + Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
+		System.out.println();
 	}
 
 }
