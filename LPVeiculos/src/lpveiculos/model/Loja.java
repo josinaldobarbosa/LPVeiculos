@@ -155,8 +155,7 @@ public class Loja {
 	 * @param estoqueDeMotocicleta
 	 *            a nova lista
 	 */
-	public void setEstoqueDeMotocicleta(
-			ArrayList<Motocicleta> estoqueDeMotocicleta) {
+	public void setEstoqueDeMotocicleta(ArrayList<Motocicleta> estoqueDeMotocicleta) {
 		this.estoqueDeMotocicletas = estoqueDeMotocicleta;
 	}
 

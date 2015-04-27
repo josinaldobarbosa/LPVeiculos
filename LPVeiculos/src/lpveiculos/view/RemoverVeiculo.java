@@ -68,11 +68,9 @@ public class RemoverVeiculo {
 				
 				if (desejaRemover().equals("s")) {
 					loja.removeVeiculo(motocicleta);
-					System.out
-							.println("\nAVISO: Motocicleta removido com sucesso.");
+					System.out.println("\nAVISO: Motocicleta removido com sucesso.");
 				} else {
-					System.out
-							.println("\nAVISO: Motocicleta NÃO foi removida.");
+					System.out.println("\nAVISO: Motocicleta NÃO foi removida.");
 				}
 			} else {
 				// não encontrado
