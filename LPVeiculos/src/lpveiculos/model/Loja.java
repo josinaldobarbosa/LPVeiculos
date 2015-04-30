@@ -6,27 +6,27 @@ import java.util.Collections;
 import lpveiculos.model.veiculos.*;
 
 /**
- * Classe que representa uma Loja de automÛveis que contÈm todas as informaÁıes
+ * Classe que representa uma Loja de autom√≥veis que cont√©m todas as informa√ß√µes
  * sobre a mesma.
  *
  * @author Josinaldo A.Barbosa
- * @version 19-04-2015
+ * @version 30-04-2015
  * 
  */
 public class Loja {
 
-	/* Vari·veis de instancia */
+	/* Vari√°veis de instancia */
 	private String endereco;
 	private String nome;
-	private ArrayList<Carro> estoqueDeCarros = new ArrayList<>();
-	private ArrayList<Motocicleta> estoqueDeMotocicletas = new ArrayList<>();
+	private List<Carro> estoqueDeCarros = new ArrayList<>();
+	private List<Motocicleta> estoqueDeMotocicletas = new ArrayList<>();
 
 	/* Construtores */
 	/**
-	 * Construtor que recebe o endereÁo e nome da loja.
+	 * Construtor que recebe o endere√ßo e nome da loja.
 	 * 
 	 * @param endereco
-	 *            EndereÁo da loja
+	 *            Endere√ßo da loja
 	 * @param nome
 	 *            Nome da loja
 	 */
@@ -35,7 +35,7 @@ public class Loja {
 		this.nome = nome;
 	}
 
-	/* MÈtodos */
+	/* M√©todos */
 	/**
 	 * Adiciona um Carro a uma lista de Carro.
 	 * 
@@ -43,7 +43,7 @@ public class Loja {
 	 *            O Carro a ser adicionado
 	 */
 	public void adicionaVeiculo(Carro carro) {
-		// Verifica se n„o contÈm o mesmo carro no estoque
+		// Verifica se n√£o cont√©m o mesmo carro no estoque
 		if (Collections.frequency(estoqueDeCarros, carro) == 0) {
 			estoqueDeCarros.add(carro);
 		}
@@ -56,7 +56,7 @@ public class Loja {
 	 *            A Motocicleta a ser adicionado
 	 */
 	public void adicionaVeiculo(Motocicleta motocicleta) {
-		// Verifica se n„o contÈm a mesma motocicleta no estoque
+		// Verifica se n√£o cont√©m a mesma motocicleta no estoque
 		if (Collections.frequency(estoqueDeMotocicletas, motocicleta) == 0) {
 			estoqueDeMotocicletas.add(motocicleta);
 		}
@@ -84,19 +84,19 @@ public class Loja {
 
 	/* Get's e Set's */
 	/**
-	 * Retona o endereÁo da loja.
+	 * Retona o endere√ßo da loja.
 	 * 
-	 * @return endereÁo da loja
+	 * @return endere√ßo da loja
 	 */
 	public String getEndereco() {
 		return endereco;
 	}
 
 	/**
-	 * Substitui o endereÁo da loja.
+	 * Substitui o endere√ßo da loja.
 	 * 
 	 * @param endereco
-	 *            o novo endereÁo
+	 *            o novo endere√ßo
 	 */
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
