@@ -124,9 +124,9 @@ public class Loja {
 	/**
 	 * Retorna a lista de Carro.
 	 * 
-	 * @return ArrayList de Carro
+	 * @return lista de Carro
 	 */
-	public ArrayList<Carro> getEstoqueDeCarros() {
+	public List<Carro> getEstoqueDeCarros() {
 		return estoqueDeCarros;
 	}
 
@@ -136,16 +136,16 @@ public class Loja {
 	 * @param estoqueDeCarros
 	 *            a nova lista
 	 */
-	public void setEstoqueDeCarros(ArrayList<Carro> estoqueDeCarros) {
+	public void setEstoqueDeCarros(List<Carro> estoqueDeCarros) {
 		this.estoqueDeCarros = estoqueDeCarros;
 	}
 
 	/**
 	 * Retorna a lista de Motocicleta.
 	 * 
-	 * @return ArrayList de Motocicleta
+	 * @return Lista de Motocicleta
 	 */
-	public ArrayList<Motocicleta> getEstoqueDeMotocicleta() {
+	public List<Motocicleta> getEstoqueDeMotocicleta() {
 		return estoqueDeMotocicletas;
 	}
 
@@ -155,7 +155,7 @@ public class Loja {
 	 * @param estoqueDeMotocicleta
 	 *            a nova lista
 	 */
-	public void setEstoqueDeMotocicleta(ArrayList<Motocicleta> estoqueDeMotocicleta) {
+	public void setEstoqueDeMotocicleta(List<Motocicleta> estoqueDeMotocicleta) {
 		this.estoqueDeMotocicletas = estoqueDeMotocicleta;
 	}
 
