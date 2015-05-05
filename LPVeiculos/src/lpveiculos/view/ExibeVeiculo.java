@@ -1,6 +1,5 @@
 package lpveiculos.view;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import lpveiculos.model.Loja;
@@ -23,7 +22,7 @@ public class ExibeVeiculo {
 		case 1:
 			/* Exibe todos os carros */
 
-			ArrayList<Carro> carros = loja.getEstoqueDeCarros();
+			List<Carro> carros = loja.getEstoqueDeCarros();
 
 			if (validaLista(carros)) {
 				// Exibe carro
@@ -43,8 +42,7 @@ public class ExibeVeiculo {
 		case 2:
 			/* Exibe todas as motocicletas */
 
-			ArrayList<Motocicleta> motocicletas = loja
-					.getEstoqueDeMotocicleta();
+			List<Motocicleta> motocicletas = loja.getEstoqueDeMotocicleta();
 
 			if (validaLista(motocicletas)) {
 				// Exibe motocicleta
