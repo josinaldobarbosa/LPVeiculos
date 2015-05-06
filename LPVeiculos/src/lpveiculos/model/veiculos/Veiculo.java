@@ -30,7 +30,7 @@ public abstract class Veiculo {
 	 * @param preco
 	 *            Preço do veiculo
 	 */
-	public Veiculo(String chassi, String modelo, Cor cor, float preco) {
+	protected Veiculo(String chassi, String modelo, Cor cor, float preco) {
 		this.chassi = chassi;
 		this.modelo = modelo;
 		this.cor = cor;

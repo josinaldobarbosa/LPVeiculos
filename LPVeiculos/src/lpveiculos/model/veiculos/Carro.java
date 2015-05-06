@@ -12,7 +12,7 @@ import lpveiculos.model.veiculos.caracteristicas.carro.Tipo;
  * @version 23-04-2015
  * 
  */
-public class Carro extends Veiculo {
+public final class Carro extends Veiculo {
 
 	/* Variáveis de instância */
 	private Montadora montadora;

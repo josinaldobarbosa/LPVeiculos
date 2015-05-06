@@ -11,7 +11,7 @@ import lpveiculos.model.veiculos.caracteristicas.motocicleta.Tipo;
  * @version 19-04-2015
  *
  */
-public class Motocicleta extends Veiculo {
+public final class Motocicleta extends Veiculo {
 
 	/* Variáveis de instância */
 	private Montadora montadora;
