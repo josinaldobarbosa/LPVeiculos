@@ -1,5 +1,7 @@
 package lpveiculos.view;
 
+import java.util.InputMismatchException;
+
 import lpveiculos.model.Loja;
 
 public class TelaPrincipal {
@@ -38,8 +40,12 @@ public class TelaPrincipal {
 			int opcao = 0;
 			while (opcao == 0) {
 				System.out.print("\nOpção: ");
+				try{
 				opcao = Utilidades.in.nextInt();
-
+				} catch (InputMismatchException i) {
+					System.out.println("Insira um caracter válido...");
+					
+				}
 				switch (opcao) {
 				case 1:
 					/* Adiciona um veiculo */
