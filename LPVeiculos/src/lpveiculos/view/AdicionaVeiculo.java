@@ -44,7 +44,7 @@ public class AdicionaVeiculo {
 				if (totalCarros < loja.getEstoqueDeCarros().size()) {
 					System.out.println("\nAVISO: Carro adicionado.");
 				} else {
-					System.out.println("\nERRO: Este carro já existe.");
+					System.err.println("\nERRO: Este carro já existe.");
 				}
 			} else {
 				System.out.println("\nAVISO: Carro NÃO foi adicionado.");
@@ -78,7 +78,7 @@ public class AdicionaVeiculo {
 				if (totalMotocicletas < loja.getEstoqueDeMotocicleta().size()) {
 					System.out.println("\nAVISO: Motocicleta adicionada.");
 				} else {
-					System.out.println("\nERRO: Esta motocicleta já existe.");
+					System.err.println("\nERRO: Esta motocicleta já existe.");
 				}
 			} else {
 				System.out.println("\nAVISO: Motocicleta NÃO foi adicionada.");

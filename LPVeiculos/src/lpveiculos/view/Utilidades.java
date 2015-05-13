@@ -45,7 +45,7 @@ public class Utilidades {
 				retorno = -1;
 				break;
 			default:
-				System.out.println("\nErro: opção inválida.");
+				System.err.println("\nErro: opção inválida.");
 			}
 
 		}

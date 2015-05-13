@@ -32,7 +32,7 @@ public class BuscaVeiculo {
 				System.out.println("[----------------------------------------]");
 			} else {
 				// não encontrado
-				System.out.println("\nERRO: Carro NÃO encontrado.");
+				System.err.println("\nERRO: Carro NÃO encontrado.");
 			}
 
 			Utilidades.pausa();
@@ -53,7 +53,7 @@ public class BuscaVeiculo {
 				System.out.println("[----------------------------------------]");
 			} else {
 				// não encontrado
-				System.out.println("\nERRO: Motocicleta NÃO encontrada.");
+				System.err.println("\nERRO: Motocicleta NÃO encontrada.");
 			}
 
 			Utilidades.pausa();
