@@ -37,8 +37,8 @@ public class TelaPrincipal {
 
 			int opcao = 0;
 			while (opcao == 0) {
-				System.out.print("\nOpção: ");
-				opcao = Utilidades.in.nextInt();
+
+				opcao = Utilidades.entradaDeInteiro("\nOpção: ");
 
 				switch (opcao) {
 				case 1:
@@ -69,13 +69,13 @@ public class TelaPrincipal {
 				case 6:
 					/* Termina programa */
 					fim = true;
-					System.out.print("\nAVISO: Programa terminado.");
+					System.out.print("\nAVISO]: Programa terminado.");
 					break;
 
 				default:
 					/* Opção inválida */
 					opcao = 0;
-					System.err.println("\nErro: opção inválida.");
+					System.err.println("\n[Erro]: opção inválida.");
 
 				} // fecha switch opcoes do menu
 

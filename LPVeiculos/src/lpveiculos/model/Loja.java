@@ -7,7 +7,7 @@ import java.util.List;
 import lpveiculos.model.veiculos.*;
 
 /**
- * Classe que representa uma Loja de autom√≥veis que cont√©m todas as informa√ß√µes
+ * Classe que representa uma Loja de automÈveis que contÈm todas as informaÁıes
  * sobre a mesma.
  *
  * @author Josinaldo A.Barbosa
@@ -57,7 +57,7 @@ public class Loja {
 	 *            A Motocicleta a ser adicionado
 	 */
 	public void adicionaVeiculo(Motocicleta motocicleta) {
-		// Verifica se n√£o cont√©m a mesma motocicleta no estoque
+		// Verifica se n„o contÈm a mesma motocicleta no estoque
 		if (Collections.frequency(estoqueDeMotocicletas, motocicleta) == 0) {
 			estoqueDeMotocicletas.add(motocicleta);
 		}
@@ -83,7 +83,7 @@ public class Loja {
 		estoqueDeMotocicletas.remove(motocicleta);
 	}
 
-	/* Get's e Set's */
+	/* Getters e Setters */
 	/**
 	 * Retona o endere√ßo da loja.
 	 * 

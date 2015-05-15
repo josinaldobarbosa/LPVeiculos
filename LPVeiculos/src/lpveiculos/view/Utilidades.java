@@ -45,7 +45,7 @@ public class Utilidades {
 				retorno = -1;
 				break;
 			default:
-				System.err.println("\nErro: opção inválida.");
+				System.err.println("\n[Erro]: opção inválida.");
 			}
 
 		}
@@ -71,6 +71,48 @@ public class Utilidades {
 		boolean retorno = true;
 		if (valor < 0 || valor > lista.size() - 1) {
 			retorno = false;
+		}
+		return retorno;
+	}
+
+
+	/**
+	 * Verifica e trata a entrada do usuário quando se espera um inteiro.
+	 * @param texto Texto exibido antes de receber dados de entrada.
+	 * @return valor inteiro a ser usado pelo programa.
+	 */
+	public static int entradaDeInteiro(String texto) {
+		int retorno = 0;
+		boolean fim = false;
+		
+		while (fim == false) {
+			System.out.print(texto);
+			try{
+				retorno = Integer.parseInt(in.nextLine());
+				fim = true;
+			} catch (NumberFormatException nf){
+				System.err.println("\n[Erro]: Caracter inválido.");
+			}
+		}
+		return retorno;
+	}
+	/**
+	 * Verifica e trata a entrada do usuário quando se espera um float.
+	 * @param texto Texto exibido antes de receber dados de entrada.
+	 * @return valor float a ser usado pelo programa.
+	 */
+	public static float entradaDeFloat(String texto) {
+		float retorno = 0;
+		boolean fim = false;
+		
+		while (fim == false) {
+			System.out.println(texto);
+			try{
+				retorno = Float.parseFloat(in.nextLine());
+				fim = true;
+			} catch (NumberFormatException nf){
+				System.err.println("\n[Erro]: Caracter inválido.");
+			}
 		}
 		return retorno;
 	}

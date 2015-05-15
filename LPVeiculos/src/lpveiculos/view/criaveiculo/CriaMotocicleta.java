@@ -22,7 +22,7 @@ public class CriaMotocicleta {
 		System.out.println("\n[--------- ADICIONA MOTOCICLETA ---------]\n");
 
 		System.out.print(" Chassi: ");
-		String chassi = Utilidades.in.next();
+		String chassi = Utilidades.in.nextLine();
 
 		// Enum Montadora
 		Montadora montadora = null;
@@ -37,8 +37,7 @@ public class CriaMotocicleta {
 				montadoras.add(montadoraE);
 				contador++;
 			}
-			System.out.print("\n Montadora: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Montadora: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, montadoras)) {
 				montadora = montadoras.get(indice);
@@ -49,7 +48,7 @@ public class CriaMotocicleta {
 		//
 
 		System.out.print(" Modelo: ");
-		String modelo = Utilidades.in.next();
+		String modelo = Utilidades.in.nextLine();
 
 		// Enum Tipo
 		Tipo tipo = null;
@@ -64,8 +63,7 @@ public class CriaMotocicleta {
 				tipos.add(tipoE);
 				contador++;
 			}
-			System.out.print("\n Tipo: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Tipo: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, tipos)) {
 				tipo = tipos.get(indice);
@@ -87,8 +85,7 @@ public class CriaMotocicleta {
 				cores.add(corE);
 				contador++;
 			}
-			System.out.print("\n Cor: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Cor: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, cores)) {
 				cor = cores.get(indice);
@@ -98,14 +95,11 @@ public class CriaMotocicleta {
 		} while (cor == null);
 		//
 
-		System.out.print(" Preço: ");
-		float preco = Utilidades.in.nextFloat();
+		float preco = Utilidades.entradaDeFloat("\n Preço: ");
 
-		System.out.print(" Cilindrada: ");
-		int cilindrada = Utilidades.in.nextInt();
+		int cilindrada = Utilidades.entradaDeInteiro("\n Cilindrada: ");
 
-		System.out.print(" Capacidade do tanque: ");
-		float capacidadeDoTanque = Utilidades.in.nextFloat();
+		float capacidadeDoTanque = Utilidades.entradaDeFloat("\n Capacidade do tanque: ");
 
 		System.out.println("\n[----------------------------------------]");
 
