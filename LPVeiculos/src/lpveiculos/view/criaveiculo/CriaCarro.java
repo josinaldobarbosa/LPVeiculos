@@ -23,7 +23,7 @@ public class CriaCarro {
 		System.out.println("\n[------------ ADICIONA CARRO ------------]\n");
 
 		System.out.print(" Chassi: ");
-		String chassi = Utilidades.in.nextLine();
+		String chassi = Utilidades.in.nextLine()
 
 		// Enum Montadora
 		Montadora montadora = null;
