@@ -21,7 +21,7 @@ public class BuscaVeiculo {
 			/* Busca Carro */
 
 			System.out.print("\nChassi do carro que deseja buscar: ");
-			String chassiCarro = Utilidades.in.nextLine();
+			String chassiCarro = Utilidades.in.next();
 
 			Carro carro = buscaCarro(chassiCarro, loja);
 
@@ -42,7 +42,7 @@ public class BuscaVeiculo {
 			/* Busca Motocicleta */
 
 			System.out.print("\nChassi da motocicleta que deseja buscar: ");
-			String chassiMotocicleta = Utilidades.in.nextLine();
+			String chassiMotocicleta = Utilidades.in.next();
 
 			Motocicleta motocicleta = buscaMotocicleta(chassiMotocicleta, loja);
 

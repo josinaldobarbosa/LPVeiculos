@@ -93,7 +93,7 @@ public class AdicionaVeiculo {
 	// Exibe pergunta se deseja salvar
 	private static String desejaSalvar() {
 		System.out.print("\nDeseja salvar?(s/n): ");
-		return Utilidades.in.nextLine();
+		return Utilidades.in.next();
 	}
 
 }

@@ -12,7 +12,7 @@ import lpveiculos.view.Utilidades;
 
 public class CriaCarro {
 	
-	// Bloqueia criação de objetos
+	// Bloqueia criaÃ§Ã£o de objetos
 	private CriaCarro() {
 	}
 
@@ -23,7 +23,7 @@ public class CriaCarro {
 		System.out.println("\n[------------ ADICIONA CARRO ------------]\n");
 
 		System.out.print(" Chassi: ");
-		String chassi = Utilidades.in.nextLine();
+		String chassi = Utilidades.in.next();
 
 		// Enum Montadora
 		Montadora montadora = null;
@@ -36,19 +36,19 @@ public class CriaCarro {
 				montadoras.add(montadoraE);
 				contador++;
 			}
-			
-			int indice = Utilidades.entradaDeInteiro("\n Montadora: ") - 1;
+			System.out.print("\n Montadora: ");
+			int indice = Utilidades.in.nextInt() - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, montadoras)) {
 				montadora = montadoras.get(indice);
 			} else {
-				System.out.println("\nErro: Montadora inválida");
+				System.out.println("\nErro: Montadora invÃ¡lida");
 			}
 		} while (montadora == null);
 		//
 
 		System.out.print(" Modelo: ");
-		String modelo = Utilidades.in.nextLine();
+		String modelo = Utilidades.in.next();
 
 		// Enum Tipo
 		Tipo tipo = null;
@@ -61,13 +61,13 @@ public class CriaCarro {
 				tipos.add(tipoE);
 				contador++;
 			}
-			
-			int indice = Utilidades.entradaDeInteiro("\n Tipo: ") - 1;
+			System.out.print("\n Tipo: ");
+			int indice = Utilidades.in.nextInt() - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, tipos)) {
 				tipo = tipos.get(indice);
 			} else {
-				System.out.println("\nErro: Tipo inválido");
+				System.out.println("\nErro: Tipo invÃ¡lido");
 			}
 		} while (tipo == null);
 		//
@@ -83,19 +83,22 @@ public class CriaCarro {
 				cores.add(corE);
 				contador++;
 			}
-			int indice = Utilidades.entradaDeInteiro("\n Cor: ") - 1;
+			System.out.print("\n Cor: ");
+			int indice = Utilidades.in.nextInt() - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, cores)) {
 				cor = cores.get(indice);
 			} else {
-				System.out.println("\nErro: Cor inválido");
+				System.out.println("\nErro: Cor invÃ¡lido");
 			}
 		} while (cor == null);
 		//
 
-		float preco = Utilidades.entradaDeFloat("\nPreço: ");
+		System.out.print(" PreÃ§o: ");
+		float preco = Utilidades.in.nextFloat();
 
-		float motorizacao = Utilidades.entradaDeFloat("\nMotorização");
+		System.out.print(" MotorizaÃ§Ã£o: ");
+		float motorizacao = Utilidades.in.nextFloat();
 
 		// Enum Cambio
 		Cambio cambio = null;
@@ -108,12 +111,13 @@ public class CriaCarro {
 				cambios.add(cambioE);
 				contador++;
 			}
-			int indice = Utilidades.entradaDeInteiro("\n Cambio: ") - 1;
+			System.out.print("\n Cambio: ");
+			int indice = Utilidades.in.nextInt() - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, cambios)) {
 				cambio = cambios.get(indice);
 			} else {
-				System.out.println("\nErro: Cambio inválido");
+				System.out.println("\nErro: Cambio invÃ¡lido");
 			}
 		} while (cambio == null);
 		//

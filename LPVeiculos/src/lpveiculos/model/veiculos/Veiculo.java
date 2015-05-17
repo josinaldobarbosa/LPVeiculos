@@ -64,7 +64,7 @@ public abstract class Veiculo {
 		return true;
 	}
 
-	/* Getters e Setters */
+	/* Get's e Set's */
 	/**
 	 * Retorna o chassi do veiculo.
 	 * 

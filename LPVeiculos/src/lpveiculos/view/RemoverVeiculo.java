@@ -22,7 +22,7 @@ public class RemoverVeiculo {
 
 			// Pede chassi
 			System.out.print("\nChassi do carro que deseja remover: ");
-			String chassiCarro = Utilidades.in.nextLine();
+			String chassiCarro = Utilidades.in.next();
 
 			// Procura carro
 			Carro carro = BuscaVeiculo.buscaCarro(chassiCarro, loja);
@@ -53,7 +53,7 @@ public class RemoverVeiculo {
 
 			// Pede chassi
 			System.out.print("\nChassi da motocicleta que deseja remover: ");
-			String chassiMotocicleta = Utilidades.in.nextLine();
+			String chassiMotocicleta = Utilidades.in.next();
 
 			// Procura motocicleta
 			Motocicleta motocicleta = BuscaVeiculo.buscaMotocicleta(
@@ -86,7 +86,7 @@ public class RemoverVeiculo {
 	// Exibe pergunta se deseja remover
 	private static String desejaRemover() {
 		System.out.print("\nTem certeza que deseja remover?(s/n): ");
-		return Utilidades.in.nextLine();
+		return Utilidades.in.next();
 	}
 
 }
