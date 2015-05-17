@@ -3,7 +3,7 @@ package lpveiculos.model.veiculos;
 import lpveiculos.model.veiculos.caracteristicas.Cor;
 
 /**
- * Super classe abstrata que contÈm caracteristicas em comum em todos os
+ * Super classe abstrata que cont√©m caracteristicas em comum em todos os
  * veiculos.
  *
  * @author Josinaldo A.Barbosa
@@ -12,7 +12,7 @@ import lpveiculos.model.veiculos.caracteristicas.Cor;
  */
 public abstract class Veiculo {
 
-	/* Vari·veis de instancia */
+	/* Vari√°veis de inst√¢ncia */
 	private String chassi;
 	private String modelo;
 	private Cor cor;
@@ -20,7 +20,7 @@ public abstract class Veiculo {
 
 	/* Construtores */
 	/**
-	 * Construtor que recebe obrigatoriamente todas as suas vari·veis de
+	 * Construtor que recebe obrigatoriamente todas as suas vari√°veis de
 	 * instancia.
 	 * 
 	 * @param chassi
@@ -28,7 +28,7 @@ public abstract class Veiculo {
 	 * @param cor
 	 *            Cor do veiculo
 	 * @param preco
-	 *            PreÁo do veiculo
+	 *            Pre√ßo do veiculo
 	 */
 	protected Veiculo(String chassi, String modelo, Cor cor, float preco) {
 		this.chassi = chassi;
@@ -37,8 +37,8 @@ public abstract class Veiculo {
 		this.preco = preco;
 	}
 
-	/* MÈtodos */
-	// Veiculos s„o iguais se possuirem o mesmo chassi
+	/* M√©todos */
+	// Veiculos s√£o iguais se possuirem o mesmo chassi
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -64,7 +64,7 @@ public abstract class Veiculo {
 		return true;
 	}
 
-	/* Get's e Set's */
+	/* Getters e Setters */
 	/**
 	 * Retorna o chassi do veiculo.
 	 * 
@@ -113,19 +113,19 @@ public abstract class Veiculo {
 	}
 
 	/**
-	 * Retorna o preÁo do veiculo.
+	 * Retorna o pre√ßo do veiculo.
 	 * 
-	 * @return preÁo do veiculo
+	 * @return pre√ßo do veiculo
 	 */
 	public float getPreco() {
 		return preco;
 	}
 
 	/**
-	 * Substitui o preÁo do veiculo.
+	 * Substitui o pre√ßo do veiculo.
 	 * 
 	 * @param preco
-	 *            o novo preÁo
+	 *            o novo pre√ßo
 	 */
 	public void setPreco(float preco) {
 		this.preco = preco;

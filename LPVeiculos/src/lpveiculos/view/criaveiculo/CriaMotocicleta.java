@@ -11,7 +11,7 @@ import lpveiculos.view.Utilidades;
 
 public class CriaMotocicleta {
 
-	// Bloqueia cria��o de objetos
+	// Bloqueia criação de objetos
 	private CriaMotocicleta() {
 	}
 
@@ -42,7 +42,7 @@ public class CriaMotocicleta {
 			if (Utilidades.validaEnumEscolhido(indice, montadoras)) {
 				montadora = montadoras.get(indice);
 			} else {
-				System.out.println("\nErro: Montadora inv�lida");
+				System.out.println("\nErro: Montadora inválida");
 			}
 		} while (montadora == null);
 		//
@@ -68,7 +68,7 @@ public class CriaMotocicleta {
 			if (Utilidades.validaEnumEscolhido(indice, tipos)) {
 				tipo = tipos.get(indice);
 			} else {
-				System.out.println("\nErro: Tipo inv�lido");
+				System.out.println("\nErro: Tipo inválido");
 			}
 		} while (tipo == null);
 		//
@@ -90,7 +90,7 @@ public class CriaMotocicleta {
 			if (Utilidades.validaEnumEscolhido(indice, cores)) {
 				cor = cores.get(indice);
 			} else {
-				System.out.println("\nErro: Cor inv�lida");
+				System.out.println("\nErro: Cor inválida");
 			}
 		} while (cor == null);
 		//

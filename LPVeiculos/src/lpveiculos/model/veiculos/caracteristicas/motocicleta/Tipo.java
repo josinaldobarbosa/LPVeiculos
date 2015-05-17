@@ -1,7 +1,7 @@
 package lpveiculos.model.veiculos.caracteristicas.motocicleta;
 
 /**
- * Nesta enumeraÁ„o est· contida toda a categoria de motocicleta
+ * Nesta enumera√ß√£o est√° contida toda a categoria de motocicleta
  * disponibilizados pela loja.
  * 
  * @author Wallace Jonathan

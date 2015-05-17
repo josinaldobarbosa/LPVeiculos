@@ -8,7 +8,7 @@ import lpveiculos.view.criaveiculo.CriaMotocicleta;
 
 public class AdicionaVeiculo {
 
-	// Bloqueia cria��o de objetos
+	// Bloqueia criação de objetos
 	private AdicionaVeiculo(Loja loja) {
 	}
 
@@ -22,7 +22,7 @@ public class AdicionaVeiculo {
 		case 1:
 			/* Adiciona Carro */
 
-			// Cadastra infoma��es do carro
+			// Cadastra infomações do carro
 			Carro carro = CriaCarro.cria();
 
 			// Salva quantidade antes de adicionar
@@ -39,15 +39,15 @@ public class AdicionaVeiculo {
 			if (desejaSalvar().equals("s")) {
 				// Adiciona carro na loja
 				loja.adicionaVeiculo(carro);
-				// Verifica se o carro foi adicionado(valida��o de carro, pacote
+				// Verifica se o carro foi adicionado(validação de carro, pacote
 				// model)
 				if (totalCarros < loja.getEstoqueDeCarros().size()) {
 					System.out.println("\nAVISO: Carro adicionado.");
 				} else {
-					System.err.println("\nERRO: Este carro j� existe.");
+					System.err.println("\nERRO: Este carro já existe.");
 				}
 			} else {
-				System.out.println("\nAVISO: Carro N�O foi adicionado.");
+				System.out.println("\nAVISO: Carro NÃO foi adicionado.");
 			}
 
 			Utilidades.pausa();
@@ -56,7 +56,7 @@ public class AdicionaVeiculo {
 		case 2:
 			/* Adiciona Motocicleta */
 
-			// Cadastra infoma��es da motocicleta
+			// Cadastra infomações da motocicleta
 			Motocicleta motocicleta = CriaMotocicleta.cria();
 
 			// Salva quantidade antes de adicionar
@@ -73,15 +73,15 @@ public class AdicionaVeiculo {
 			if (desejaSalvar().equals("s")) {
 				// Adiciona carro na loja
 				loja.adicionaVeiculo(motocicleta);
-				// Verifica se a motocicleta foi adicionado(valida��o de
+				// Verifica se a motocicleta foi adicionado(validação de
 				// motocicleta, pacote model)
 				if (totalMotocicletas < loja.getEstoqueDeMotocicleta().size()) {
 					System.out.println("\nAVISO: Motocicleta adicionada.");
 				} else {
-					System.err.println("\nERRO: Esta motocicleta j� existe.");
+					System.err.println("\nERRO: Esta motocicleta já existe.");
 				}
 			} else {
-				System.out.println("\nAVISO: Motocicleta N�O foi adicionada.");
+				System.out.println("\nAVISO: Motocicleta NÃO foi adicionada.");
 			}
 
 			Utilidades.pausa();

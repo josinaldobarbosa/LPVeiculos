@@ -1,7 +1,7 @@
 package lpveiculos.model.veiculos.caracteristicas.motocicleta;
 
 /**
- * Nesta enumeraÁ„o est· contida todas as montadores de motocicletas que servem
+ * Nesta enumera√ß√£o est√° contida todas as montadores de motocicletas que servem
  * a loja
  * 
  * @author Wallace Jonathan

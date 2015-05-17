@@ -1,7 +1,7 @@
 package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
- * Nesta enumeraÁ„o est· contida todas as categorias dos carros disponibilizados
+ * Nesta enumera√ß√£o est√° contida todas as categorias dos carros disponibilizados
  * pela loja.
  * 
  * @author Carlos Renato
@@ -12,20 +12,20 @@ public enum Tipo {
 
 	ENTRADA         ("Entrada"),
 	HATCHPEQUENO    ("Hatch Pequeno"),
-	HATCHMEDIO      ("Hatch MÈdio"),
+	HATCHMEDIO      ("Hatch M√©dio"),
 	SEDANPEQUENO    ("Sedan Pequeno"),
 	SEDANCOMPACTO   ("Sedan Compacto"),
-	SEDANMEDIO      ("Sedan MÈdio"),
+	SEDANMEDIO      ("Sedan M√©dio"),
 	SEDANGRANDE     ("Sedan Grande"),
-	SWMEDIO         ("SW MÈdio"),
+	SWMEDIO         ("SW M√©dio"),
 	SWGRANDE        ("SW Grande"),
 	MONOCAB         ("Monocab"),
 	GRANDCAB        ("Grandcab"),
 	SPORT           ("Sport"),
 	PICKUPPEPEQUENA ("Pick-up Pequena"),
 	PICKUPPEGRANDE  ("Pick-up"),
-	FURGAO          ("Furg„o"),
-	FURGAOPEQUENO   ("Furg„o Pequeno"),
+	FURGAO          ("Furg√£o"),
+	FURGAOPEQUENO   ("Furg√£o Pequeno"),
 	SUV             ("SUV");
 
 	private String tipo;

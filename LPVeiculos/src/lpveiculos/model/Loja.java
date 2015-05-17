@@ -83,7 +83,7 @@ public class Loja {
 		estoqueDeMotocicletas.remove(motocicleta);
 	}
 
-	/* Get's e Set's */
+	/* Getters e Setters */
 	/**
 	 * Retona o endereço da loja.
 	 * 

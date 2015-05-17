@@ -8,7 +8,7 @@ import lpveiculos.model.veiculos.Motocicleta;
 
 public class ExibeVeiculo {
 
-	// Bloqueia criação de objetos
+	// Bloqueia criaÃ§Ã£o de objetos
 	private ExibeVeiculo() {
 	}
 
@@ -17,7 +17,7 @@ public class ExibeVeiculo {
 		int veiculoEscolhido = Utilidades.escolheVeiculo();
 		Utilidades.limpaTela();
 
-		// Exibe depedendo do veiculo
+		// Exibe depedendo do veÃ­culo
 		switch (veiculoEscolhido) {
 		case 1:
 			/* Exibe todos os carros */
@@ -27,7 +27,7 @@ public class ExibeVeiculo {
 			if (validaLista(carros)) {
 				// Exibe carro
 				for (int i = 0; i < carros.size(); i++) {
-					System.out.println("[--------------- " + (i + 1) + "º Carro ---------------]");
+					System.out.println("[--------------- " + (i + 1) + "ï¿½ Carro ---------------]");
 					exibeUmVeiculo(carros.get(i));
 				}
 				System.out.println("[----------------------------------------]");
@@ -47,7 +47,7 @@ public class ExibeVeiculo {
 			if (validaLista(motocicletas)) {
 				// Exibe motocicleta
 				for (int i = 0; i < motocicletas.size(); i++) {
-					System.out.println("[------------ " + (i + 1) + "º Motocicleta ------------]");
+					System.out.println("[------------ " + (i + 1) + "ï¿½ Motocicleta ------------]");
 					exibeUmVeiculo(motocicletas.get(i));
 				}
 				System.out.println("[----------------------------------------]");
@@ -61,7 +61,7 @@ public class ExibeVeiculo {
 		}
 	}
 
-	// Verifica se a lista está vazia ou nula
+	// Verifica se a lista estÃ¡ vazia ou nula
 	private static <T> boolean validaLista(List<T> lista) {
 		boolean retorno = true;
 		if (lista.size() == 0 || lista == null) {
@@ -78,9 +78,9 @@ public class ExibeVeiculo {
 		System.out.println(" Modelo:      " + carro.getModelo());
 		System.out.println(" Tipo:        " + carro.getTipo());
 		System.out.println(" Cor:         " + carro.getCor());
-		System.out.println(" Motorização: " + carro.getMotorizacao());
+		System.out.println(" Motorizaï¿½ï¿½o: " + carro.getMotorizacao());
 		System.out.println(" Cambio:      " + carro.getCambio());
-		System.out.println(" Preço:       " + Utilidades.formatoDinheiro.format(carro.getPreco()));
+		System.out.println(" Preï¿½o:       " + Utilidades.formatoDinheiro.format(carro.getPreco()));
 		System.out.println();
 	}
 
@@ -94,7 +94,7 @@ public class ExibeVeiculo {
 		System.out.println(" Cor:            " + motocicleta.getCor());
 		System.out.println(" Cilindrada:     " + motocicleta.getCilindrada());
 		System.out.println(" Cap. do tanque: " + motocicleta.getCapacidadeDoTanque());
-		System.out.println(" Preço:          " + Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
+		System.out.println(" Preï¿½o:          " + Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
 		System.out.println();
 	}
 

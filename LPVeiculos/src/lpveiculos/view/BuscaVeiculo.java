@@ -6,7 +6,7 @@ import lpveiculos.model.veiculos.Motocicleta;
 
 public class BuscaVeiculo {
 
-	// Bloqueia criaÁ„o de objetos
+	// Bloqueia cria√ß√£o de objetos
 	private BuscaVeiculo() {
 	}
 
@@ -31,8 +31,8 @@ public class BuscaVeiculo {
 				ExibeVeiculo.exibeUmVeiculo(carro);
 				System.out.println("[----------------------------------------]");
 			} else {
-				// n„o encontrado
-				System.err.println("\nERRO: Carro N√O encontrado.");
+				// n√£o encontrado
+				System.err.println("\nERRO: Carro N√ÉO encontrado.");
 			}
 
 			Utilidades.pausa();
@@ -52,8 +52,8 @@ public class BuscaVeiculo {
 				ExibeVeiculo.exibeUmVeiculo(motocicleta);
 				System.out.println("[----------------------------------------]");
 			} else {
-				// n„o encontrado
-				System.err.println("\nERRO: Motocicleta N√O encontrada.");
+				// n√£o encontrado
+				System.err.println("\nERRO: Motocicleta N√ÉO encontrada.");
 			}
 
 			Utilidades.pausa();

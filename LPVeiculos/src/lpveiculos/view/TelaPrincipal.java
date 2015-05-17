@@ -4,7 +4,7 @@ import lpveiculos.model.Loja;
 
 public class TelaPrincipal {
 
-	// Bloqueia cria��o de objetos
+	// Bloqueia criação de objetos
 	private TelaPrincipal() {
 	}
 
@@ -12,14 +12,14 @@ public class TelaPrincipal {
 	public static void start() {
 
 		// TODO Criar m�todo para receber a loja...
-		Loja loja = new Loja("Rua S�o Jos�, 90 - Centro, RJ", "LP - Veiculos");
+		Loja loja = new Loja("Rua São José, 90 - Centro, RJ", "LP - Veículos");
 		// TODO remover o teste
 
 		// Menu
 		menu(loja);
 	}
 
-	// Menu de op��es
+	// Menu de opções
 	private static void menu(Loja loja) {
 		boolean fim = false;
 
@@ -27,11 +27,11 @@ public class TelaPrincipal {
 		while (fim == false) {
 			Utilidades.limpaTela();
 			System.out.println("[----------------- MENU -----------------]\n");
-			System.out.println(" 1) Adicionar veiculo");
-			System.out.println(" 2) Remover veiculo");
-			System.out.println(" 3) Pesquisar veiculo");
-			System.out.println(" 4) Buscar veiculo");
-			System.out.println(" 5) Exibir todos os veiculos");
+			System.out.println(" 1) Adicionar veículo");
+			System.out.println(" 2) Remover veículo");
+			System.out.println(" 3) Pesquisar veículo");
+			System.out.println(" 4) Buscar veículo");
+			System.out.println(" 5) Exibir todos os veículos");
 			System.out.println("\n 6) Sair");
 			System.out.println("\n[----------------------------------------]");
 
@@ -72,9 +72,9 @@ public class TelaPrincipal {
 					break;
 
 				default:
-					/* Op��o inv�lida */
+					/* Opção inválida */
 					opcao = 0;
-					System.err.println("\nErro: op��o inv�lida.");
+					System.err.println("\nErro: opção inválida.");
 
 				} // fecha switch opcoes do menu
 
@@ -82,6 +82,6 @@ public class TelaPrincipal {
 
 		} // fecha while fim
 
-	} // fim m�todo menu
+	} // fim método menu
 
 } // fim class

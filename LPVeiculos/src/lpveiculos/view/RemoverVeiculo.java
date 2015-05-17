@@ -6,7 +6,7 @@ import lpveiculos.model.veiculos.Motocicleta;
 
 public class RemoverVeiculo {
 
-	// Bloqueia criaÁ„o de objetos
+	// Bloqueia cria√ß√£o de objetos
 	private RemoverVeiculo() {
 	}
 
@@ -38,11 +38,11 @@ public class RemoverVeiculo {
 					loja.removeVeiculo(carro);
 					System.out.println("\nAVISO: Carro removido com sucesso.");
 				} else {
-					System.out.println("\nAVISO: Carro N√O foi removido.");
+					System.out.println("\nAVISO: Carro N√ÉO foi removido.");
 				}
 			} else {
-				// n„o encontrado
-				System.err.println("\nERRO: Carro N√O encontrado.");
+				// n√£o encontrado
+				System.err.println("\nERRO: Carro N√ÉO encontrado.");
 			}
 
 			Utilidades.pausa();
@@ -70,11 +70,11 @@ public class RemoverVeiculo {
 					loja.removeVeiculo(motocicleta);
 					System.out.println("\nAVISO: Motocicleta removido com sucesso.");
 				} else {
-					System.out.println("\nAVISO: Motocicleta N√O foi removida.");
+					System.out.println("\nAVISO: Motocicleta N√ÉO foi removida.");
 				}
 			} else {
-				// n„o encontrado
-				System.err.println("\nERRO: Motocicleta N√O encontrada.");
+				// n√£o encontrado
+				System.err.println("\nERRO: Motocicleta N√ÉO encontrada.");
 			}
 
 			Utilidades.pausa();

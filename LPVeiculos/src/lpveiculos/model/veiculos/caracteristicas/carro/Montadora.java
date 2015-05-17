@@ -1,7 +1,7 @@
 package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
- * Nesta enumeraÁ„o est· contida todas o nome de todas as montadoras de carros
+ * Nesta enumera√ß√£o est√° contida todas o nome de todas as montadoras de carros
  * que servem a loja.
  * 
  * @author Carlos Renato

@@ -1,15 +1,15 @@
 package lpveiculos.model.veiculos.caracteristicas.carro;
 
 /**
- * Nesta enumeraÁ„o os tipos de c‚mbio disponÌveis nos carros.
+ * Nesta enumer√ß√£o os tipos de c√¢mbio dispon√≠veis nos carros.
  * 
  * @author Carlos Renato
  *
  */
 public enum Cambio {
 
-	AUTOMATICO     ("Autom·tico"),
-	SEMIAUTOMATICO ("Semi-autom·tico"),
+	AUTOMATICO     ("Autom√°tico"),
+	SEMIAUTOMATICO ("Semi-autom√°tico"),
 	MANUAL         ("Manual");
 
 	private String cambio;

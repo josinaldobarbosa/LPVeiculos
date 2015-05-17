@@ -1,7 +1,7 @@
 package lpveiculos.model.veiculos.caracteristicas;
 
 /**
- * Nesta enumeraÁ„o est· contida todas as cores dos veÌculos da loja.
+ * Nesta enumera√ß√£o est√° contida todas as cores dos ve√≠culos da loja.
  * 
  * @author Carlos Renato
  *

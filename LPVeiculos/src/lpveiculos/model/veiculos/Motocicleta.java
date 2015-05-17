@@ -13,7 +13,7 @@ import lpveiculos.model.veiculos.caracteristicas.motocicleta.Tipo;
  */
 public final class Motocicleta extends Veiculo {
 
-	/* Vari·veis de inst‚ncia */
+	/* Vari√°veis de inst√¢ncia */
 	private Montadora montadora;
 	private Tipo tipo;
 	private int cilindrada;
@@ -21,7 +21,7 @@ public final class Motocicleta extends Veiculo {
 
 	/* Construtores */
 	/**
-	 * Construtor que cadastra um veÌculo.
+	 * Construtor que cadastra um ve√≠culo.
 	 * 
 	 * @param chass
 	 *            Chassi da moto
@@ -39,7 +39,7 @@ public final class Motocicleta extends Veiculo {
 	 *            Cor da moto
 	 * 
 	 * @param preco
-	 *            PreÁo da moto
+	 *            Pre√ßo da moto
 	 * @param cilindrada
 	 * 
 	 * @param cilindrada
@@ -59,7 +59,7 @@ public final class Motocicleta extends Veiculo {
 		this.capacidadeDoTanque = capacidadeDoTanque;
 	}
 
-	/* Get's e Set's */
+	/* Getters e Setters */
 	/**
 	 * Retorna a cilindrada da moto.
 	 * 

@@ -6,7 +6,7 @@ import lpveiculos.model.veiculos.caracteristicas.carro.Montadora;
 import lpveiculos.model.veiculos.caracteristicas.carro.Tipo;
 
 /**
- * Classe que representa um carro da loja e todas as suas informações.
+ * Classe que representa um carro da loja e todas as suas informaÃ§Ãµes.
  * 
  * @author Carlos Renato
  * @version 23-04-2015
@@ -14,7 +14,7 @@ import lpveiculos.model.veiculos.caracteristicas.carro.Tipo;
  */
 public final class Carro extends Veiculo {
 
-	/* Variáveis de instância */
+	/* VariÃ¡veis de instÃ¢ncia */
 	private Montadora montadora;
 	private Tipo tipo;
 	private float motorizacao;
@@ -25,7 +25,7 @@ public final class Carro extends Veiculo {
 	 * Construtor para o cadastro de carros
 	 * 
 	 * @param chassi
-	 *            Número do chassi do carro
+	 *            NÃºmero do chassi do carro
 	 * @param cor
 	 *            Nome da cor do carro
 	 * @param preco
@@ -37,9 +37,9 @@ public final class Carro extends Veiculo {
 	 * @param tipo
 	 *            Nome da categoria do carro
 	 * @param motorizacao
-	 *            Motorização do carro
+	 *            MotorizaÃ§Ã£o do carro
 	 * @param cambio
-	 *            Tipo de câmbio do carro
+	 *            Tipo de cÃ¢mbio do carro
 	 */
 	public Carro(String chassi, String modelo, Cor cor, float preco,
 			Montadora montadora, Tipo tipo, float motorizacao, Cambio cambio) {
@@ -109,19 +109,19 @@ public final class Carro extends Veiculo {
 	}
 
 	/**
-	 * Retorna a motorização do carro
+	 * Retorna a motorizaÃ§Ã£o do carro
 	 * 
-	 * @return motorização do carro
+	 * @return motorizaÃ§Ã£o do carro
 	 */
 	public float getMotorizacao() {
 		return motorizacao;
 	}
 
 	/**
-	 * Substitui a motorização do carro
+	 * Substitui a motorizaÃ§Ã£o do carro
 	 * 
 	 * @param motorizacao
-	 *            a nova motorização
+	 *            a nova motorizaÃ§Ã£o
 	 */
 	public void setMotorizacao(float motorizacao) {
 		this.motorizacao = motorizacao;

@@ -4,7 +4,7 @@ import lpveiculos.view.TelaPrincipal;
 
 public class Principal {
 
-	// Bloqueia criação de objetos
+	// Bloqueia criaÃ§Ã£o de objetos
 	private Principal() {
 	}
 

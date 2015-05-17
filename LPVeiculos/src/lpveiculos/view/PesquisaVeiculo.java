@@ -4,7 +4,7 @@ import lpveiculos.model.Loja;
 
 public class PesquisaVeiculo {
 
-	// Bloqueia criação de objetos
+	// Bloqueia criaÃ§Ã£o de objetos
 	private PesquisaVeiculo() {
 	}
 
