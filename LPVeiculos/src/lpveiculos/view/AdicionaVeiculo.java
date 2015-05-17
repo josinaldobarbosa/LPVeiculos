@@ -8,7 +8,7 @@ import lpveiculos.view.criaveiculo.CriaMotocicleta;
 
 public class AdicionaVeiculo {
 
-	// Bloqueia criação de objetos
+	// Bloqueia criaï¿½ï¿½o de objetos
 	private AdicionaVeiculo(Loja loja) {
 	}
 
@@ -22,7 +22,7 @@ public class AdicionaVeiculo {
 		case 1:
 			/* Adiciona Carro */
 
-			// Cadastra infomações do carro
+			// Cadastra infomaï¿½ï¿½es do carro
 			Carro carro = CriaCarro.cria();
 
 			// Salva quantidade antes de adicionar
@@ -39,15 +39,15 @@ public class AdicionaVeiculo {
 			if (desejaSalvar().equals("s")) {
 				// Adiciona carro na loja
 				loja.adicionaVeiculo(carro);
-				// Verifica se o carro foi adicionado(validação de carro, pacote
+				// Verifica se o carro foi adicionado(validaï¿½ï¿½o de carro, pacote
 				// model)
 				if (totalCarros < loja.getEstoqueDeCarros().size()) {
 					System.out.println("\nAVISO: Carro adicionado.");
 				} else {
-					System.err.println("\nERRO: Este carro já existe.");
+					System.err.println("\nERRO: Este carro jï¿½ existe.");
 				}
 			} else {
-				System.out.println("\nAVISO: Carro NÃO foi adicionado.");
+				System.out.println("\nAVISO: Carro Nï¿½O foi adicionado.");
 			}
 
 			Utilidades.pausa();
@@ -56,7 +56,7 @@ public class AdicionaVeiculo {
 		case 2:
 			/* Adiciona Motocicleta */
 
-			// Cadastra infomações da motocicleta
+			// Cadastra infomaï¿½ï¿½es da motocicleta
 			Motocicleta motocicleta = CriaMotocicleta.cria();
 
 			// Salva quantidade antes de adicionar
@@ -73,15 +73,15 @@ public class AdicionaVeiculo {
 			if (desejaSalvar().equals("s")) {
 				// Adiciona carro na loja
 				loja.adicionaVeiculo(motocicleta);
-				// Verifica se a motocicleta foi adicionado(validação de
+				// Verifica se a motocicleta foi adicionado(validaï¿½ï¿½o de
 				// motocicleta, pacote model)
 				if (totalMotocicletas < loja.getEstoqueDeMotocicleta().size()) {
 					System.out.println("\nAVISO: Motocicleta adicionada.");
 				} else {
-					System.err.println("\nERRO: Esta motocicleta já existe.");
+					System.err.println("\nERRO: Esta motocicleta jï¿½ existe.");
 				}
 			} else {
-				System.out.println("\nAVISO: Motocicleta NÃO foi adicionada.");
+				System.out.println("\nAVISO: Motocicleta Nï¿½O foi adicionada.");
 			}
 
 			Utilidades.pausa();
@@ -93,7 +93,7 @@ public class AdicionaVeiculo {
 	// Exibe pergunta se deseja salvar
 	private static String desejaSalvar() {
 		System.out.print("\nDeseja salvar?(s/n): ");
-		return Utilidades.in.next();
+		return Utilidades.in.nextLine();
 	}
 
 }

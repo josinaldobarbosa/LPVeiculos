@@ -11,7 +11,7 @@ import lpveiculos.view.Utilidades;
 
 public class CriaMotocicleta {
 
-	// Bloqueia criação de objetos
+	// Bloqueia criaï¿½ï¿½o de objetos
 	private CriaMotocicleta() {
 	}
 
@@ -22,7 +22,7 @@ public class CriaMotocicleta {
 		System.out.println("\n[--------- ADICIONA MOTOCICLETA ---------]\n");
 
 		System.out.print(" Chassi: ");
-		String chassi = Utilidades.in.next();
+		String chassi = Utilidades.in.nextLine();
 
 		// Enum Montadora
 		Montadora montadora = null;
@@ -37,19 +37,18 @@ public class CriaMotocicleta {
 				montadoras.add(montadoraE);
 				contador++;
 			}
-			System.out.print("\n Montadora: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Montadora: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, montadoras)) {
 				montadora = montadoras.get(indice);
 			} else {
-				System.out.println("\nErro: Montadora inválida");
+				System.out.println("\nErro: Montadora invï¿½lida");
 			}
 		} while (montadora == null);
 		//
 
 		System.out.print(" Modelo: ");
-		String modelo = Utilidades.in.next();
+		String modelo = Utilidades.in.nextLine();
 
 		// Enum Tipo
 		Tipo tipo = null;
@@ -64,13 +63,12 @@ public class CriaMotocicleta {
 				tipos.add(tipoE);
 				contador++;
 			}
-			System.out.print("\n Tipo: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Tipo: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, tipos)) {
 				tipo = tipos.get(indice);
 			} else {
-				System.out.println("\nErro: Tipo inválido");
+				System.out.println("\nErro: Tipo invï¿½lido");
 			}
 		} while (tipo == null);
 		//
@@ -87,25 +85,21 @@ public class CriaMotocicleta {
 				cores.add(corE);
 				contador++;
 			}
-			System.out.print("\n Cor: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Cor: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, cores)) {
 				cor = cores.get(indice);
 			} else {
-				System.out.println("\nErro: Cor inválida");
+				System.out.println("\nErro: Cor invï¿½lida");
 			}
 		} while (cor == null);
 		//
 
-		System.out.print(" Preço: ");
-		float preco = Utilidades.in.nextFloat();
+		float preco = Utilidades.entradaDeFloat(" PreÃ§o: ");
 
-		System.out.print(" Cilindrada: ");
-		int cilindrada = Utilidades.in.nextInt();
+		int cilindrada = Utilidades.entradaDeInteiro(" Cilindrada: ");
 
-		System.out.print(" Capacidade do tanque: ");
-		float capacidadeDoTanque = Utilidades.in.nextFloat();
+		float capacidadeDoTanque = Utilidades.entradaDeFloat(" Capacidade do tanque: ");
 
 		System.out.println("\n[----------------------------------------]");
 

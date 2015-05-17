@@ -23,7 +23,7 @@ public class CriaCarro {
 		System.out.println("\n[------------ ADICIONA CARRO ------------]\n");
 
 		System.out.print(" Chassi: ");
-		String chassi = Utilidades.in.next();
+		String chassi = Utilidades.in.nextLine();
 
 		// Enum Montadora
 		Montadora montadora = null;
@@ -36,19 +36,18 @@ public class CriaCarro {
 				montadoras.add(montadoraE);
 				contador++;
 			}
-			System.out.print("\n Montadora: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Montadora: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, montadoras)) {
 				montadora = montadoras.get(indice);
 			} else {
-				System.out.println("\nErro: Montadora inválida");
+				System.err.println("\nErro: Montadora inválida");
 			}
 		} while (montadora == null);
 		//
 
 		System.out.print(" Modelo: ");
-		String modelo = Utilidades.in.next();
+		String modelo = Utilidades.in.nextLine();
 
 		// Enum Tipo
 		Tipo tipo = null;
@@ -61,8 +60,7 @@ public class CriaCarro {
 				tipos.add(tipoE);
 				contador++;
 			}
-			System.out.print("\n Tipo: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Tipo: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, tipos)) {
 				tipo = tipos.get(indice);
@@ -83,8 +81,7 @@ public class CriaCarro {
 				cores.add(corE);
 				contador++;
 			}
-			System.out.print("\n Cor: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Cor: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, cores)) {
 				cor = cores.get(indice);
@@ -93,12 +90,10 @@ public class CriaCarro {
 			}
 		} while (cor == null);
 		//
+		
+		float preco = Utilidades.entradaDeFloat(" Preço: ");
 
-		System.out.print(" Preço: ");
-		float preco = Utilidades.in.nextFloat();
-
-		System.out.print(" Motorização: ");
-		float motorizacao = Utilidades.in.nextFloat();
+		float motorizacao = Utilidades.entradaDeFloat(" Motorização: ");
 
 		// Enum Cambio
 		Cambio cambio = null;
@@ -111,8 +106,7 @@ public class CriaCarro {
 				cambios.add(cambioE);
 				contador++;
 			}
-			System.out.print("\n Cambio: ");
-			int indice = Utilidades.in.nextInt() - 1;
+			int indice = Utilidades.entradaDeInteiro("\n Câmbio: ") - 1;
 
 			if (Utilidades.validaEnumEscolhido(indice, cambios)) {
 				cambio = cambios.get(indice);

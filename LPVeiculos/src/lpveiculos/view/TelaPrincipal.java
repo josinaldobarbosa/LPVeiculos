@@ -4,22 +4,22 @@ import lpveiculos.model.Loja;
 
 public class TelaPrincipal {
 
-	// Bloqueia criação de objetos
+	// Bloqueia criaï¿½ï¿½o de objetos
 	private TelaPrincipal() {
 	}
 
 	// Inicia o programa
 	public static void start() {
 
-		// TODO Criar método para receber a loja...
-		Loja loja = new Loja("Rua São José, 90 - Centro, RJ", "LP - Veiculos");
+		// TODO Criar mï¿½todo para receber a loja...
+		Loja loja = new Loja("Rua Sï¿½o Josï¿½, 90 - Centro, RJ", "LP - Veiculos");
 		// TODO remover o teste
 
 		// Menu
 		menu(loja);
 	}
 
-	// Menu de opções
+	// Menu de opï¿½ï¿½es
 	private static void menu(Loja loja) {
 		boolean fim = false;
 
@@ -37,8 +37,7 @@ public class TelaPrincipal {
 
 			int opcao = 0;
 			while (opcao == 0) {
-				System.out.print("\nOpção: ");
-				opcao = Utilidades.in.nextInt();
+				opcao = Utilidades.entradaDeInteiro("\nOpÃ§Ã£o: ");
 
 				switch (opcao) {
 				case 1:
@@ -73,9 +72,9 @@ public class TelaPrincipal {
 					break;
 
 				default:
-					/* Opção inválida */
+					/* Opï¿½ï¿½o invï¿½lida */
 					opcao = 0;
-					System.err.println("\nErro: opção inválida.");
+					System.err.println("\nErro: opï¿½ï¿½o invï¿½lida.");
 
 				} // fecha switch opcoes do menu
 
@@ -83,6 +82,6 @@ public class TelaPrincipal {
 
 		} // fecha while fim
 
-	} // fim método menu
+	} // fim mï¿½todo menu
 
 } // fim class
