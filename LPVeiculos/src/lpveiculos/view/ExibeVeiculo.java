@@ -78,9 +78,9 @@ public class ExibeVeiculo {
 		System.out.println(" Modelo:      " + carro.getModelo());
 		System.out.println(" Tipo:        " + carro.getTipo());
 		System.out.println(" Cor:         " + carro.getCor());
-		System.out.println(" Motoriza��o: " + carro.getMotorizacao());
+		System.out.println(" Motorização: " + carro.getMotorizacao());
 		System.out.println(" Cambio:      " + carro.getCambio());
-		System.out.println(" Pre�o:       " + Utilidades.formatoDinheiro.format(carro.getPreco()));
+		System.out.println(" Preço:       " + Utilidades.formatoDinheiro.format(carro.getPreco()));
 		System.out.println();
 	}
 
@@ -94,7 +94,7 @@ public class ExibeVeiculo {
 		System.out.println(" Cor:            " + motocicleta.getCor());
 		System.out.println(" Cilindrada:     " + motocicleta.getCilindrada());
 		System.out.println(" Cap. do tanque: " + motocicleta.getCapacidadeDoTanque());
-		System.out.println(" Pre�o:          " + Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
+		System.out.println(" Preço:          " + Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
 		System.out.println();
 	}
 
