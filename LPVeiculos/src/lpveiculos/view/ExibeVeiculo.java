@@ -27,7 +27,7 @@ public class ExibeVeiculo {
 			if (validaLista(carros)) {
 				// Exibe carro
 				for (int i = 0; i < carros.size(); i++) {
-					System.out.println("[--------------- " + (i + 1) + "� Carro ---------------]");
+					System.out.println("[--------------- " + (i + 1) + "º Carro ---------------]");
 					exibeUmVeiculo(carros.get(i));
 				}
 				System.out.println("[----------------------------------------]");
@@ -47,7 +47,7 @@ public class ExibeVeiculo {
 			if (validaLista(motocicletas)) {
 				// Exibe motocicleta
 				for (int i = 0; i < motocicletas.size(); i++) {
-					System.out.println("[------------ " + (i + 1) + "� Motocicleta ------------]");
+					System.out.println("[------------ " + (i + 1) + "º Motocicleta ------------]");
 					exibeUmVeiculo(motocicletas.get(i));
 				}
 				System.out.println("[----------------------------------------]");
