@@ -1,5 +1,6 @@
 package lpveiculos.view;
 
+import lpveiculos.controller.excecoes.Excecao;
 import lpveiculos.model.Loja;
 import lpveiculos.model.veiculos.Carro;
 import lpveiculos.model.veiculos.Motocicleta;
@@ -25,9 +26,6 @@ public class AdicionaVeiculo {
 			// Cadastra infomações do carro
 			Carro carro = CriaCarro.cria();
 
-			// Salva quantidade antes de adicionar
-			int totalCarros = loja.getEstoqueDeCarros().size();
-
 			Utilidades.limpaTela();
 
 			// Exibe o carro criado
@@ -36,15 +34,13 @@ public class AdicionaVeiculo {
 			System.out.println("[----------------------------------------]");
 
 			// Pergunta se quer salvar
-			if (desejaSalvar().equals("s")) {
-				// Adiciona carro na loja
-				loja.adicionaVeiculo(carro);
-				// Verifica se o carro foi adicionado(validação de carro, pacote
-				// model)
-				if (totalCarros < loja.getEstoqueDeCarros().size()) {
+			if (desejaSalvar().toLowerCase().equals("s")) {
+				try {
+					// Adiciona carro na loja
+					loja.adicionaVeiculo(carro);
 					System.out.println("\nAVISO: Carro adicionado.");
-				} else {
-					System.err.println("\nERRO: Este carro já existe.");
+				} catch (Excecao e) {
+					System.err.println("\nERRO: " + e.getMessage());
 				}
 			} else {
 				System.out.println("\nAVISO: Carro NÃO foi adicionado.");
@@ -59,9 +55,6 @@ public class AdicionaVeiculo {
 			// Cadastra infomações da motocicleta
 			Motocicleta motocicleta = CriaMotocicleta.cria();
 
-			// Salva quantidade antes de adicionar
-			int totalMotocicletas = loja.getEstoqueDeMotocicleta().size();
-
 			Utilidades.limpaTela();
 
 			// Exibe a motocicleta criada
@@ -70,15 +63,13 @@ public class AdicionaVeiculo {
 			System.out.println("[----------------------------------------]");
 
 			// Pergunta se quer salvar
-			if (desejaSalvar().equals("s")) {
-				// Adiciona carro na loja
-				loja.adicionaVeiculo(motocicleta);
-				// Verifica se a motocicleta foi adicionado(validação de
-				// motocicleta, pacote model)
-				if (totalMotocicletas < loja.getEstoqueDeMotocicleta().size()) {
+			if (desejaSalvar().toLowerCase().equals("s")) {
+				try {
+					// Adiciona motocicleta na loja
+					loja.adicionaVeiculo(motocicleta);
 					System.out.println("\nAVISO: Motocicleta adicionada.");
-				} else {
-					System.err.println("\nERRO: Esta motocicleta já existe.");
+				} catch (Excecao e) {
+					System.err.println("\nERRO: " + e.getMessage());
 				}
 			} else {
 				System.out.println("\nAVISO: Motocicleta NÃO foi adicionada.");
