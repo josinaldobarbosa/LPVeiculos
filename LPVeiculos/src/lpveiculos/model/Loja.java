@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import lpveiculos.controller.excecoes.Excecao;
 import lpveiculos.model.veiculos.*;
 
 /**
@@ -11,7 +12,7 @@ import lpveiculos.model.veiculos.*;
  * sobre a mesma.
  *
  * @author Josinaldo A.Barbosa
- * @version 30-04-2015
+ * @version 09-04-2015
  * 
  */
 public class Loja {
@@ -42,11 +43,15 @@ public class Loja {
 	 * 
 	 * @param carro
 	 *            O Carro a ser adicionado
+	 * @throws Excecao
+	 *             Caso o carro já exista
 	 */
-	public void adicionaVeiculo(Carro carro) {
+	public void adicionaVeiculo(Carro carro) throws Excecao {
 		// Verifica se não contém o mesmo carro no estoque
 		if (Collections.frequency(estoqueDeCarros, carro) == 0) {
 			estoqueDeCarros.add(carro);
+		} else {
+			throw new Excecao("Carro já existe!");
 		}
 	}
 
@@ -55,11 +60,15 @@ public class Loja {
 	 * 
 	 * @param motocicleta
 	 *            A Motocicleta a ser adicionado
+	 * @throws Excecao
+	 *             Caso a motocicleta já exista
 	 */
-	public void adicionaVeiculo(Motocicleta motocicleta) {
+	public void adicionaVeiculo(Motocicleta motocicleta) throws Excecao {
 		// Verifica se não contém a mesma motocicleta no estoque
 		if (Collections.frequency(estoqueDeMotocicletas, motocicleta) == 0) {
 			estoqueDeMotocicletas.add(motocicleta);
+		} else {
+			throw new Excecao("Motocicleta já existe!");
 		}
 	}
 
