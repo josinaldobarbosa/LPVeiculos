@@ -5,6 +5,7 @@ import java.util.List;
 import lpveiculos.model.Loja;
 import lpveiculos.model.veiculos.Carro;
 import lpveiculos.model.veiculos.Motocicleta;
+import lpveiculos.model.veiculos.Veiculo;
 
 public class ExibeVeiculo {
 
@@ -69,32 +70,33 @@ public class ExibeVeiculo {
 		}
 		return retorno;
 	}
+	
+	// Exibe atributos de um veiculo
+	protected static void exibeVeiculo(Veiculo veiculo) {
+		System.out.println();
+		System.out.println(" Chassi:      " + veiculo.getChassi());
+		System.out.println(" Modelo:      " + veiculo.getModelo());
+		System.out.println(" Cor:         " + veiculo.getCor());
+		System.out.println(" Preço:       " + Utilidades.formatoDinheiro.format(veiculo.getPreco()));
+	}
 
 	// Exibe um Carro
 	protected static void exibeUmVeiculo(Carro carro) {
-		System.out.println();
-		System.out.println(" Chassi:      " + carro.getChassi());
+		exibeVeiculo(carro);
 		System.out.println(" Montadora:   " + carro.getMontadora());
-		System.out.println(" Modelo:      " + carro.getModelo());
 		System.out.println(" Tipo:        " + carro.getTipo());
-		System.out.println(" Cor:         " + carro.getCor());
 		System.out.println(" Motorização: " + carro.getMotorizacao());
 		System.out.println(" Cambio:      " + carro.getCambio());
-		System.out.println(" Preço:       " + Utilidades.formatoDinheiro.format(carro.getPreco()));
 		System.out.println();
 	}
 
 	// Exibe uma Motocicleta
 	protected static void exibeUmVeiculo(Motocicleta motocicleta) {
-		System.out.println();
-		System.out.println(" Chassi:         " + motocicleta.getChassi());
+		exibeVeiculo(motocicleta);
 		System.out.println(" Montadora:      " + motocicleta.getMontadora());
-		System.out.println(" Modelo:         " + motocicleta.getModelo());
 		System.out.println(" Tipo:           " + motocicleta.getTipo());
-		System.out.println(" Cor:            " + motocicleta.getCor());
 		System.out.println(" Cilindrada:     " + motocicleta.getCilindrada());
 		System.out.println(" Cap. do tanque: " + motocicleta.getCapacidadeDoTanque());
-		System.out.println(" Preço:          " + Utilidades.formatoDinheiro.format(motocicleta.getPreco()));
 		System.out.println();
 	}
 
